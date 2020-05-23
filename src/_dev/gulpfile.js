@@ -19,7 +19,7 @@ gulp.task("sass", function () {
 });
 
 gulp.task("move", function () {
-  return gulp.src("img/**/*").pipe(gulp.dest("../assets/img/"));
+  return gulp.src("img/**/*").pipe(gulp.dest("../../public/img/"));
 });
 
 gulp.task("watch", function () {
