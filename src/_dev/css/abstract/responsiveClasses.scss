@@ -1,0 +1,10 @@
+.mobile-only{
+    @include media-breakpoint-desktop(){
+        display: none;
+    }
+}
+.desktop-only{
+    @include media-breakpoint-mobile(){
+        display: none;
+    }
+}
