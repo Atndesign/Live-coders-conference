@@ -11,6 +11,7 @@ label {
     font-size: (24 / 16) * $spacer;
     font-weight: 700;
     color: $primary;
+    margin-bottom: $spacer;
 
     &.--white {
         color: white;

@@ -1,0 +1,11 @@
+.speaker__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 6px;
+    border: 1px solid $card-stroke;
+    background-color: $primary;
+    padding: $spacer $spacer / 2;
+    color: #fff;
+    text-align: center;
+}
