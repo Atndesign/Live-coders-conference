@@ -1,0 +1,13 @@
+.header {
+    padding-top: $spacer * 2;
+    padding-right: $spacer;
+    padding-left: $spacer;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: $spacer * 2;
+
+    .header__menu {
+        background-color: transparent;
+        border: none;
+    }
+}
