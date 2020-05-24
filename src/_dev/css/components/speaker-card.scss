@@ -44,6 +44,11 @@
 
     .speaker-card__social-icon {
       margin: 0 $spacer / 2;
+      transition: 0.2s ease-in-out;
+
+      &:hover {
+        transform: scale(1.4);
+      }
     }
   }
 }

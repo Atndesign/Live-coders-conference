@@ -25,6 +25,11 @@
 
         .footer-socials__icon {
             margin: $spacer*2 $spacer;
+            transition: transform 0.2s ease-in-out;
+
+            &:hover {
+                transform: scale(1.4);
+            }
         }
     }
 }
