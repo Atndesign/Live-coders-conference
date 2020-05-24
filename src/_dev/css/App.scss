@@ -2,7 +2,6 @@
 //Abstract
 @import "./abstract/variables";
 @import "./abstract/responsive";
-@import "./abstract/responsiveClasses";
 
 //Base
 @import "./base/fonts";
@@ -18,3 +17,5 @@
 @import "./components/sponsors";
 @import "./components/footer";
 //Common
+//Responsive
+@import "./abstract/responsiveClasses";

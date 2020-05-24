@@ -78,7 +78,7 @@ class Header extends Component {
             </ul>
           </nav>
         </div>
-        <nav className="desktop-only">
+        <nav className="desktop-only header__nav-desktop">
           <ul className="desktop-nav__list">
             <li className="nav-list__item">
               <a href="#">Home</a>

@@ -56,9 +56,15 @@
 
 @include media-breakpoint-tablet {
     .header {
+        .header__nav-desktop {
+            display: flex;
+            align-items: center;
+        }
+
         .desktop-nav__list {
             list-style: none;
             display: flex;
+            margin-bottom: 0;
 
             .nav-list__item {
                 margin: 0 $spacer /2;

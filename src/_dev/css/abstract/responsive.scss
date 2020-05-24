@@ -1,18 +1,18 @@
-@mixin media-breakpoint-tablet() {
-  @include media-breakpoint-only(md) {
-    @content;
-  }
-}
-
 @mixin media-breakpoint-desktop() {
-  @include media-breakpoint-up(lg) {
+  @include media-breakpoint-up(md) {
     @content;
   }
 }
 
 @mixin media-breakpoint-mobile() {
 
-  @include media-breakpoint-down(xs) {
+  @include media-breakpoint-down(sm) {
+    @content;
+  }
+}
+
+@mixin media-breakpoint-tablet() {
+  @include media-breakpoint-only(md) {
     @content;
   }
 }
