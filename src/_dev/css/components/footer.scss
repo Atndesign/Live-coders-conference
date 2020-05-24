@@ -1,0 +1,30 @@
+.footer {
+    position: relative;
+    background-color: $primary;
+    padding: $spacer *2 0;
+    text-align: center;
+    color: white;
+
+    &::before {
+        content: "";
+        z-index: -1;
+        display: block;
+        height: 4rem;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-image: url("./waves/wave.svg");
+        background-size: 115%;
+        position: absolute;
+        top: -45px;
+        left: 0;
+    }
+
+    .footer__socials {
+        display: flex;
+        justify-content: center;
+
+        .footer-socials__icon {
+            margin: $spacer*2 $spacer;
+        }
+    }
+}
