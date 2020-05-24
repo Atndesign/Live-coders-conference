@@ -72,6 +72,11 @@
 
             a {
                 color: $primary;
+
+                &:hover {
+                    text-decoration: none;
+                    color: darken($color: $primary, $amount: 10);
+                }
             }
         }
     }
@@ -92,6 +97,11 @@
 
             a {
                 color: $primary;
+
+                &:hover {
+                    text-decoration: none;
+                    color: darken($color: $primary, $amount: 35);
+                }
             }
         }
     }
