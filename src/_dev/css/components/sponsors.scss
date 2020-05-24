@@ -24,3 +24,12 @@
         }
     }
 }
+
+@include media-breakpoint-desktop {
+    .sponsors {
+        .sponsors__fauna {
+            text-align: left;
+            margin: 0;
+        }
+    }
+}

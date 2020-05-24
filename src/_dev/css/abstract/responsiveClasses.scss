@@ -1,10 +1,17 @@
-.mobile-only{
-    @include media-breakpoint-desktop(){
+.mobile-only {
+    @include media-breakpoint-desktop() {
         display: none;
     }
 }
-.desktop-only{
-    @include media-breakpoint-mobile(){
+
+.tablet-only {
+    @include media-breakpoint-desktop() {
+        display: none;
+    }
+}
+
+.desktop-only {
+    @include media-breakpoint-mobile() {
         display: none;
     }
 }
