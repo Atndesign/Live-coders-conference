@@ -42,6 +42,7 @@ class Header extends Component {
         <button
           className="header__menu mobile-only"
           onClick={(e) => this.open(e)}
+          aria-label="Open menu"
         >
           <img
             srcSet="./img/icons/menu-purple.svg"
@@ -54,6 +55,7 @@ class Header extends Component {
           <button
             className="header-mobile__close"
             onClick={(e) => this.close(e)}
+            aria-label="Close menu"
           >
             <img
               srcSet="./img/icons/cross.svg"
@@ -81,7 +83,7 @@ class Header extends Component {
         <nav className="desktop-only header__nav-desktop">
           <ul className="desktop-nav__list">
             <li className="nav-list__item">
-              <a href="#">Home</a>
+              <a href="/">Home</a>
             </li>
             <li className="nav-list__item">
               <a href="#speakers">Speakers</a>

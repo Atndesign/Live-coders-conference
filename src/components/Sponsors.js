@@ -23,6 +23,14 @@ class Sponsors extends Component {
                   alt="DevExpress logo"
                   height="335"
                   width="238"
+                  className="mobile-only "
+                />
+                <img
+                  src="./img/sponsors/sponsorsDesktop.png"
+                  alt="DevExpress logo"
+                  height="194"
+                  width="558"
+                  className="desktop-only img-fluid"
                 />
               </div>
             </div>

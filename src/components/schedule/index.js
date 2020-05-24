@@ -83,7 +83,7 @@ class Schedules extends Component {
               </p>
               <div className="schedules__card-container">
                 {schedules.a.map((e) => (
-                  <ScheduleCard infos={e} />
+                  <ScheduleCard infos={e} key={e.title} />
                 ))}
               </div>
             </div>
@@ -94,7 +94,7 @@ class Schedules extends Component {
               </p>
               <div className="schedules__card-container">
                 {schedules.b.map((e) => (
-                  <ScheduleCard infos={e} />
+                  <ScheduleCard infos={e} key={e.title} />
                 ))}
               </div>
             </div>
