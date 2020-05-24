@@ -10,3 +10,17 @@
         text-align: center;
     }
 }
+
+@include media-breakpoint-tablet {
+    .sponsors {
+        .sponsors__fauna {
+            text-align: left;
+            margin: 0;
+        }
+
+        .sponsors__conf-sponsors {
+            text-align: left;
+            margin: 0;
+        }
+    }
+}

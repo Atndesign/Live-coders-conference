@@ -75,20 +75,29 @@ class Schedules extends Component {
             />
             <span>Download the schedules</span>
           </a>
-          <p className="schedules__conf-title">Conference Part A</p>
-          <p className="schedules__conf-title --bold">
-            Thursday April 9th 2020
-          </p>
-          <div className="schedules__card-container">
-            {schedules.a.map((e) => (
-              <ScheduleCard infos={e} />
-            ))}
-          </div>
-          <p className="schedules__conf-title">Conference Part B</p>
-          <div className="schedules__card-container">
-            {schedules.b.map((e) => (
-              <ScheduleCard infos={e} />
-            ))}
+          <div className="row">
+            <div className="col-md-6">
+              <p className="schedules__conf-title">Conference Part A</p>
+              <p className="schedules__conf-title --bold">
+                Thursday April 9th 2020
+              </p>
+              <div className="schedules__card-container">
+                {schedules.a.map((e) => (
+                  <ScheduleCard infos={e} />
+                ))}
+              </div>
+            </div>
+            <div className="col-md-6">
+              <p className="schedules__conf-title">Conference Part B</p>
+              <p className="schedules__conf-title --bold">
+                Thursday April 9th 2020
+              </p>
+              <div className="schedules__card-container">
+                {schedules.b.map((e) => (
+                  <ScheduleCard infos={e} />
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </section>

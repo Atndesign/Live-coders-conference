@@ -7,7 +7,7 @@ class SpeakerCard extends Component {
   }
   render() {
     return (
-      <div className="col-md-6 col-6 speaker__card-col">
+      <div className="col-lg-3 col-md-4 col-6 speaker__card-col">
         <div className="speaker__card">
           <div
             className="speaker-card__pic"

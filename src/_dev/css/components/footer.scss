@@ -12,10 +12,10 @@
         height: 4rem;
         width: 100%;
         background-repeat: no-repeat;
-        background-image: url("./waves/wave.svg");
+        background-image: url("./waves/waveDesktop.svg");
         background-size: 115%;
         position: absolute;
-        top: -45px;
+        top: -30px;
         left: 0;
     }
 
@@ -25,6 +25,14 @@
 
         .footer-socials__icon {
             margin: $spacer*2 $spacer;
+        }
+    }
+}
+
+@include media-breakpoint-tablet {
+    .footer {
+        &::before {
+            background-image: url("./waves/waveDesktop.svg");
         }
     }
 }

@@ -78,7 +78,22 @@ class Header extends Component {
             </ul>
           </nav>
         </div>
-        <nav className="desktop-only">Hello world</nav>
+        <nav className="desktop-only">
+          <ul className="desktop-nav__list">
+            <li className="nav-list__item">
+              <a href="#">Home</a>
+            </li>
+            <li className="nav-list__item">
+              <a href="#speakers">Speakers</a>
+            </li>
+            <li className="nav-list__item">
+              <a href="#schedules">Schedules</a>
+            </li>
+            <li className="nav-list__item">
+              <a href="#sponsors">Sponsors</a>
+            </li>
+          </ul>
+        </nav>
       </header>
     );
   }

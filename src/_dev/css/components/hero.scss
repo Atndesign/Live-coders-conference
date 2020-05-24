@@ -22,3 +22,19 @@
         text-align: center;
     }
 }
+
+@include media-breakpoint-tablet {
+    .hero {
+        .hero__title {
+            margin-bottom: $spacer * 2;
+        }
+
+        .hero__date {
+            text-align: left;
+        }
+
+        .hero__text {
+            text-align: left;
+        }
+    }
+}

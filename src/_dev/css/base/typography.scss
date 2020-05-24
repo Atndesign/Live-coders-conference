@@ -18,3 +18,16 @@ label {
         color: white;
     }
 }
+
+@include media-breakpoint-tablet {
+    .section__title {
+        text-align: left;
+    }
+}
+
+@include media-breakpoint-desktop {
+    .section__title {
+        text-align: left;
+        font-size: (32 / 16) * $spacer;
+    }
+}

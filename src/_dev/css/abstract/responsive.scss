@@ -1,12 +1,18 @@
+@mixin media-breakpoint-tablet() {
+  @include media-breakpoint-only(md) {
+    @content;
+  }
+}
+
 @mixin media-breakpoint-desktop() {
-  @include media-breakpoint-up(md) {
+  @include media-breakpoint-up(lg) {
     @content;
   }
 }
 
 @mixin media-breakpoint-mobile() {
 
-  @include media-breakpoint-down(sm) {
+  @include media-breakpoint-down(xs) {
     @content;
   }
 }

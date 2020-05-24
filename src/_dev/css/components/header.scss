@@ -53,3 +53,20 @@
         }
     }
 }
+
+@include media-breakpoint-tablet {
+    .header {
+        .desktop-nav__list {
+            list-style: none;
+            display: flex;
+
+            .nav-list__item {
+                margin: 0 $spacer /2;
+            }
+
+            a {
+                color: $primary;
+            }
+        }
+    }
+}

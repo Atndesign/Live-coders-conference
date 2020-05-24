@@ -21,3 +21,18 @@
         }
     }
 }
+
+@include media-breakpoint-tablet {
+    .speakers {
+
+        .speakers__desc {
+            text-align: left;
+            margin-bottom: $spacer * 2;
+        }
+
+        .speakers__note {
+            font-size: 14px;
+            text-align: left;
+        }
+    }
+}

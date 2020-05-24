@@ -12,10 +12,10 @@
         height: 12rem;
         width: 100%;
         background-repeat: no-repeat;
-        background-image: url("./waves/wave.svg");
+        background-image: url("./waves/waveDesktop.svg");
         background-size: 115%;
         position: absolute;
-        top: -42px;
+        top: -30px;
         left: 0;
     }
 
@@ -48,6 +48,33 @@
         &.--bold {
             font-weight: bold;
             margin-bottom: $spacer * 2;
+        }
+    }
+}
+
+@include media-breakpoint-tablet {
+    .schedules {
+        .schedules__desc {
+            text-align: left;
+        }
+
+        .schedules__conf-title {
+            margin-bottom: $spacer;
+
+            &.--bold {
+                margin-bottom: $spacer;
+
+            }
+        }
+
+        &::before {
+            background-image: url("./waves/waveDesktop.svg");
+        }
+
+        .schedules__download-btn {
+            width: 40%;
+            margin: 0;
+            margin-bottom: $spacer *2;
         }
     }
 }
