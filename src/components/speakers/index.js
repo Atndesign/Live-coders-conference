@@ -104,8 +104,8 @@ class Speakers extends Component {
             <span className="speakers-desc--purple">go check them out!</span>
           </p>
           <div className="row">
-            {speakers.map((e) => (
-              <SpeakerCard current={e} key={e.name} />
+            {speakers.map((e, index) => (
+              <SpeakerCard current={e} key={e.name} index={index} />
             ))}
           </div>
           <p className="speakers__note">

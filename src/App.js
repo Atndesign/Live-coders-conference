@@ -1,5 +1,6 @@
 import React from "react";
 import "./assets/css/App.css";
+import AOS from "aos";
 
 import Header from "./components/Header";
 import Speakers from "./components/speakers";
@@ -7,6 +8,8 @@ import Schedules from "./components/schedule";
 import Sponsors from "./components/Sponsors";
 import Footer from "./components/Footer";
 import TwitchEmbeded from "./components/TwitchEmbeded";
+
+AOS.init();
 
 function App() {
   return (

@@ -1,15 +1,12 @@
 import React, { Component } from "react";
-import ReactDOM from "react-dom";
-
 const EMBED_URL = "https://embed.twitch.tv/embed/v1.js";
 
 class TwitchEmbeded extends Component {
   componentDidMount() {
-    let embed;
     const script = document.createElement("script");
     script.setAttribute("src", EMBED_URL);
     script.addEventListener("load", () => {
-      embed = new window.Twitch.Embed(this.props.targetID, { ...this.props });
+      new window.Twitch.Embed(this.props.targetID, { ...this.props });
     });
     document.body.appendChild(script);
   }

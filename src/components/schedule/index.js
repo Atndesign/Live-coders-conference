@@ -82,8 +82,8 @@ class Schedules extends Component {
                 Thursday April 9th 2020
               </p>
               <div className="schedules__card-container">
-                {schedules.a.map((e) => (
-                  <ScheduleCard infos={e} key={e.title} />
+                {schedules.a.map((e, index) => (
+                  <ScheduleCard infos={e} key={e.title} index={index} />
                 ))}
               </div>
             </div>
@@ -93,8 +93,8 @@ class Schedules extends Component {
                 Thursday April 9th 2020
               </p>
               <div className="schedules__card-container">
-                {schedules.b.map((e) => (
-                  <ScheduleCard infos={e} key={e.title} />
+                {schedules.b.map((e, index) => (
+                  <ScheduleCard infos={e} key={e.title} index={index} />
                 ))}
               </div>
             </div>

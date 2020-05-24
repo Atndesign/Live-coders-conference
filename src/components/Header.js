@@ -25,11 +25,9 @@ class Header extends Component {
     } else {
       classes = "header__menu-mobile mobile-only open";
     }
-
-    console.log(classes);
     return (
       <header className="header">
-        <a href="/">
+        <a href="./">
           <img
             srcSet="./img/logo-purple.svg"
             src="./img/logo-purple.png"
@@ -66,7 +64,7 @@ class Header extends Component {
           <nav className="header-mobile__nav ">
             <ul className="mobile-nav__list">
               <li className="nav-list__item">
-                <a href="#">Home</a>
+                <a href="./">Home</a>
               </li>
               <li className="nav-list__item">
                 <a href="#speakers">Speakers</a>

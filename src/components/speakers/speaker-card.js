@@ -7,7 +7,11 @@ class SpeakerCard extends Component {
   }
   render() {
     return (
-      <div className="col-lg-3 col-md-4 col-6 speaker__card-col">
+      <div
+        className="col-lg-3 col-md-4 col-6 speaker__card-col"
+        data-aos="fade-right"
+        data-aos-delay={100 * this.props.index}
+      >
         <div className="speaker__card">
           <div
             className="speaker-card__pic"

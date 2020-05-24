@@ -4,7 +4,11 @@ class ScheduleCard extends Component {
   state = {};
   render() {
     return (
-      <div className="schedule-card">
+      <div
+        className="schedule-card"
+        data-aos="fade-right"
+        data-aos-delay={100 * this.props.index}
+      >
         <div className="schedule-card__avatar">
           <div
             className="schedule-avatar__container"
