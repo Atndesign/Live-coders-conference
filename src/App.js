@@ -1,34 +1,16 @@
 import React from "react";
 import "./assets/css/App.css";
 
+import Header from "./components/Header";
 import Speakers from "./components/speakers";
 import Schedules from "./components/schedule";
 import Sponsors from "./components/Sponsors";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <div className="App">
-      <header className="header">
-        <a href="/">
-          <img
-            srcSet="./img/logo-purple.svg"
-            src="./img/logo-purple.png"
-            alt="logo"
-            className="header__logo"
-            height="34"
-            width="34"
-          />
-        </a>
-        <button className="header__menu mobile-only">
-          <img
-            srcSet="./img/icons/menu-purple.svg"
-            src="./img/icons/menu-purple.png"
-            alt=""
-            className="header__menu-icon"
-          />
-        </button>
-        <nav className="desktop-only">Hello world</nav>
-      </header>
+      <Header />
       <section className="hero">
         <img
           src="./img/banner.png"
@@ -55,6 +37,7 @@ function App() {
       <Speakers />
       <Schedules />
       <Sponsors />
+      <Footer />
     </div>
   );
 }

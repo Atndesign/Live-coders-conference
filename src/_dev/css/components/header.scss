@@ -10,4 +10,46 @@
         background-color: transparent;
         border: none;
     }
+
+    .header__menu-mobile {
+        transform: translateX(-100%);
+        z-index: 100;
+        position: relative;
+        top: 0;
+        left: 0;
+        position: fixed;
+        height: 100%;
+        width: 70%;
+        background-color: rgba(0, 0, 0, 0.94);
+        padding: $spacer * 6 $spacer $spacer * 4 $spacer;
+        transition: transform .5s cubic-bezier(1, 0.01, 0, 1.06);
+
+        &.open {
+            transform: translateX(0);
+        }
+
+        .header-mobile__close {
+            position: absolute;
+            right: $spacer * 2;
+            top: $spacer * 2;
+            background: transparent;
+            border: none;
+        }
+
+        .header-mobile__nav {
+            color: white;
+        }
+
+        .mobile-nav__list {
+            list-style: none;
+        }
+
+        .nav-list__item {
+            margin-bottom: $spacer;
+
+            a {
+                color: white;
+            }
+        }
+    }
 }
