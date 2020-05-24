@@ -12,6 +12,30 @@ let schedules = {
         end: "06:15 AM PDT",
       },
     },
+    {
+      avatar: "https://randomuser.me/api/portraits/women/44.jpg",
+      title: "Using Azure IoT Central to form a basis for your IoT Solutions",
+      times: {
+        start: "05:00 AM PDT",
+        end: "06:15 AM PDT",
+      },
+    },
+    {
+      avatar: "https://randomuser.me/api/portraits/women/44.jpg",
+      title: "Using Azure IoT Central to form a basis for your IoT Solutions",
+      times: {
+        start: "05:00 AM PDT",
+        end: "06:15 AM PDT",
+      },
+    },
+    {
+      avatar: "https://randomuser.me/api/portraits/women/44.jpg",
+      title: "Using Azure IoT Central to form a basis for your IoT Solutions",
+      times: {
+        start: "05:00 AM PDT",
+        end: "06:15 AM PDT",
+      },
+    },
   ],
   b: [
     {
@@ -55,9 +79,17 @@ class Schedules extends Component {
           <p className="schedules__conf-title --bold">
             Thursday April 9th 2020
           </p>
-          {schedules.a.map((e) => (
-            <ScheduleCard infos={e} />
-          ))}
+          <div className="schedules__card-container">
+            {schedules.a.map((e) => (
+              <ScheduleCard infos={e} />
+            ))}
+          </div>
+          <p className="schedules__conf-title">Conference Part B</p>
+          <div className="schedules__card-container">
+            {schedules.b.map((e) => (
+              <ScheduleCard infos={e} />
+            ))}
+          </div>
         </div>
       </section>
     );
