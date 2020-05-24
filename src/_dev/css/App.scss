@@ -6,7 +6,11 @@
 
 //Base
 @import "./base/fonts";
+@import "./base/typography";
 
 //Components
-@import "./components/header"
+@import "./components/header";
+@import "./components/hero";
+@import "./components/speakers";
+@import "./components/speaker-card";
 //Common

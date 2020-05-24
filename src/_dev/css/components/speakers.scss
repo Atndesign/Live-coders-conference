@@ -1,3 +1,17 @@
 .speakers__desc {
     text-align: center;
+
+    .speakers-desc--purple {
+        color: $primary;
+        font-weight: bold;
+    }
+}
+
+.speakers__note {
+    text-align: center;
+
+    .speakers__note--purple {
+        @extend .speakers-desc--purple;
+        font-weight: bold;
+    }
 }

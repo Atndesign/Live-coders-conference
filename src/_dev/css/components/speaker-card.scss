@@ -1,11 +1,40 @@
+.speaker__card-col {
+  margin-bottom: $spacer;
+}
 .speaker__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 6px;
+  border: 1px solid $card-stroke;
+  background-color: $primary;
+  padding: $spacer $spacer / 2;
+  color: #fff;
+  text-align: center;
+  font-size: 12px;
+  height: 100%;
+
+  .speaker-card__pic {
+    border-radius: 50%;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    margin-bottom: $spacer / 2;
+    overflow: hidden;
+  }
+  .speaker-card__name {
+    margin-bottom: $spacer / 2;
+  }
+  .speaker-card__title {
+    font-weight: 700;
+    margin-bottom: $spacer / 2;
+  }
+  .speaker-card__socials {
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 6px;
-    border: 1px solid $card-stroke;
-    background-color: $primary;
-    padding: $spacer $spacer / 2;
-    color: #fff;
-    text-align: center;
+    justify-content: center;
+    .speaker-card__social-icon {
+      margin: 0 $spacer / 2;
+    }
+  }
 }

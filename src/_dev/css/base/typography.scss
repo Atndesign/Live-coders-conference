@@ -3,17 +3,17 @@ p,
 h1,
 h2,
 label {
-    font-family: $font-family-base;
+  font-family: $font-family-base;
 }
 
 .section__title {
-    text-align: center;
-    font-size: (24 / 16) * $spacer;
-    font-weight: 700;
-    color: $primary;
-    margin-bottom: $spacer;
+  text-align: center;
+  font-size: (24 / 16) * $spacer;
+  font-weight: 700;
+  color: $primary;
+  margin-bottom: $spacer;
 
-    &.--white {
-        color: white;
-    }
+  &.--white {
+    color: white;
+  }
 }
