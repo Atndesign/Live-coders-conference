@@ -79,6 +79,7 @@
 
 @include media-breakpoint-desktop {
     .header {
+        margin-bottom: $spacer * 4;
 
         .desktop-nav__list {
             list-style: none;
