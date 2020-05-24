@@ -2,6 +2,7 @@ import React from "react";
 import "./assets/css/App.css";
 
 import Speakers from "./components/speakers";
+import Schedules from "./components/schedule";
 
 function App() {
   return (
@@ -51,6 +52,7 @@ function App() {
         </div>
       </section>
       <Speakers />
+      <Schedules />
     </div>
   );
 }

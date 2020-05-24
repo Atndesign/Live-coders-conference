@@ -1,0 +1,41 @@
+.schedule-card {
+    display: flex;
+    font-size: 14px;
+    align-items: center;
+    padding: $spacer $spacer;
+    background: white;
+    border: 1px solid #C9C9C9;
+    border-radius: 8px;
+
+    .schedule-card__avatar {
+        .schedule-avatar__container {
+            background-size: cover;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            margin-right: $spacer;
+        }
+    }
+
+    .schedule-card__infos {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+
+        .schedule-card__title {
+            margin-bottom: $spacer;
+        }
+
+        .schedule__time {
+            margin: 0 $spacer / 2 0 0;
+        }
+
+        .schedule-time__watch {
+            margin-right: $spacer / 2;
+        }
+
+        .schedule-time__arrow {
+            margin-right: $spacer / 2;
+        }
+    }
+}
