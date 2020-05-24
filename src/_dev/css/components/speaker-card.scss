@@ -1,6 +1,7 @@
 .speaker__card-col {
   margin-bottom: $spacer;
 }
+
 .speaker__card {
   display: flex;
   flex-direction: column;
@@ -22,17 +23,25 @@
     margin-bottom: $spacer / 2;
     overflow: hidden;
   }
+
   .speaker-card__name {
     margin-bottom: $spacer / 2;
   }
+
   .speaker-card__title {
     font-weight: 700;
     margin-bottom: $spacer / 2;
   }
+
+  .speaker-card__time {
+    margin-bottom: $spacer;
+  }
+
   .speaker-card__socials {
     width: 100%;
     display: flex;
     justify-content: center;
+
     .speaker-card__social-icon {
       margin: 0 $spacer / 2;
     }

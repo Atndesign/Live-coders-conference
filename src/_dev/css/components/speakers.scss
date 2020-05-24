@@ -16,7 +16,7 @@
         font-size: 12px;
 
         .speakers__note--purple {
-            @extend .speakers-desc--purple;
+            color: $primary;
             font-weight: bold;
         }
     }
