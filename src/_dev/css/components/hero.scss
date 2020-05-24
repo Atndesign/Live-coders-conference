@@ -38,3 +38,20 @@
         }
     }
 }
+
+@include media-breakpoint-desktop {
+    .hero {
+        .hero__title {
+            text-align: left;
+            margin-bottom: $spacer * 2;
+        }
+
+        .hero__date {
+            text-align: left;
+        }
+
+        .hero__text {
+            text-align: left;
+        }
+    }
+}

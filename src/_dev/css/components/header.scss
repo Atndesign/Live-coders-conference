@@ -76,3 +76,22 @@
         }
     }
 }
+
+@include media-breakpoint-desktop {
+    .header {
+
+        .desktop-nav__list {
+            list-style: none;
+            display: flex;
+            margin-bottom: 0;
+
+            .nav-list__item {
+                margin: 0 $spacer /2;
+            }
+
+            a {
+                color: $primary;
+            }
+        }
+    }
+}
