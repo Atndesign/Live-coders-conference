@@ -96,7 +96,7 @@ class Speakers extends Component {
   state = {};
   render() {
     return (
-      <section id="speakers">
+      <section id="speakers" className="speakers">
         <div className="container">
           <h2 className="section__title">The speakers</h2>
           <p className="speakers__desc">
