@@ -3,6 +3,7 @@ import "./assets/css/App.css";
 
 import Speakers from "./components/speakers";
 import Schedules from "./components/schedule";
+import Sponsors from "./components/Sponsors";
 
 function App() {
   return (
@@ -53,6 +54,7 @@ function App() {
       </section>
       <Speakers />
       <Schedules />
+      <Sponsors />
     </div>
   );
 }
