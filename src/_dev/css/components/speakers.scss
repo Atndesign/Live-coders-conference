@@ -1,17 +1,23 @@
-.speakers__desc {
-    text-align: center;
+.speakers {
+    margin-bottom: $spacer * 2.5;
 
-    .speakers-desc--purple {
-        color: $primary;
-        font-weight: bold;
+    .speakers__desc {
+        text-align: center;
+        margin-bottom: $spacer;
+
+        .speakers-desc--purple {
+            color: $primary;
+            font-weight: bold;
+        }
     }
-}
 
-.speakers__note {
-    text-align: center;
+    .speakers__note {
+        text-align: center;
+        font-size: 12px;
 
-    .speakers__note--purple {
-        @extend .speakers-desc--purple;
-        font-weight: bold;
+        .speakers__note--purple {
+            @extend .speakers-desc--purple;
+            font-weight: bold;
+        }
     }
 }

@@ -1,0 +1,51 @@
+.schedules {
+    padding-top: $spacer * 2;
+    background-color: $primary;
+    position: relative;
+
+    &::before {
+        content: "";
+        z-index: -1;
+        display: block;
+        height: 12rem;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-image: url("/static/media/wave.993aa79c.svg");
+        background-size: 115%;
+        position: absolute;
+        top: -42px;
+        left: 0;
+    }
+
+    .schedules__desc {
+        text-align: center;
+        color: white;
+        margin-bottom: $spacer * 2;
+    }
+
+    .schedules__download-btn {
+        display: block;
+        background-color: $btnBg;
+        padding: $spacer $spacer;
+        color: white;
+        margin: 0 auto;
+        border: 2px solid #440E7B;
+        text-align: center;
+        width: 80%;
+        margin-bottom: $spacer *2;
+
+        .download-btn__icon {
+            margin-right: $spacer / 2;
+        }
+    }
+
+    .schedules__conf-title {
+        color: white;
+        margin-bottom: $spacer / 2;
+
+        &.--bold {
+            font-weight: bold;
+            margin-bottom: $spacer * 2;
+        }
+    }
+}
