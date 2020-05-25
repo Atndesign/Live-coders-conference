@@ -19,7 +19,9 @@ class SpeakerCard extends Component {
               backgroundImage: "url(" + this.props.current.avatar + ")",
             }}
           ></div>
-          <p className="speaker-card__name">{this.props.current.name}</p>
+          <p className="speaker-card__name">
+            {this.props.current.name + ` (${this.props.current.twitchName})`}
+          </p>
           <p className="speaker-card__title">{this.props.current.title}</p>
           <p className="speaker-card__time">{this.props.current.time}</p>
           <div className="speaker-card__socials">
