@@ -10,84 +10,9 @@ let speakers = [
     time: "12:15 pm PDT",
     socialsLink: {
       twitch: "./",
-      twitter: "",
-    },
-  },
-  {
-    avatar: "https://randomuser.me/api/portraits/women/44.jpg",
-    name: "Timmy Kokke",
-    twitchName: "sorskoot",
-    title: "How to build a WebXR Game in 13KB",
-    time: "12:15 pm PDT",
-    socialsLink: {
-      twitch: "./",
-      twitter: "",
-    },
-  },
-  {
-    avatar: "https://randomuser.me/api/portraits/women/44.jpg",
-    name: "Timmy Kokke",
-    twitchName: "sorskoot",
-    title: "How to build a WebXR Game in 13KB",
-    time: "12:15 pm PDT",
-    socialsLink: {
-      twitch: "./",
-      twitter: "",
-    },
-  },
-  {
-    avatar: "https://randomuser.me/api/portraits/women/44.jpg",
-    name: "Timmy Kokke",
-    twitchName: "sorskoot",
-    title: "How to build a WebXR Game in 13KB",
-    time: "12:15 pm PDT",
-    socialsLink: {
-      twitch: "./",
-      twitter: "",
-    },
-  },
-  {
-    avatar: "https://randomuser.me/api/portraits/women/44.jpg",
-    name: "Timmy Kokke",
-    twitchName: "sorskoot",
-    title: "How to build a WebXR Game in 13KB",
-    time: "12:15 pm PDT",
-    socialsLink: {
-      twitch: "./",
-      twitter: "",
-    },
-  },
-  {
-    avatar: "https://randomuser.me/api/portraits/women/44.jpg",
-    name: "Timmy Kokke",
-    twitchName: "sorskoot",
-    title: "How to build a WebXR Game in 13KB",
-    time: "12:15 pm PDT",
-    socialsLink: {
-      twitch: "./",
-      twitter: "",
-    },
-  },
-  {
-    avatar: "https://randomuser.me/api/portraits/women/44.jpg",
-    name: "Timmy Kokke",
-    twitchName: "sorskoot",
-    title: "How to build a WebXR Game in 13KB",
-    time: "12:15 pm PDT",
-    socialsLink: {
-      twitch: "./",
-      twitter: "",
-    },
-  },
-  {
-    avatar: "https://randomuser.me/api/portraits/women/44.jpg",
-    name: "Timmy Kokke",
-    twitchName: "sorskoot",
-    title: "How to build a WebXR Game in 13KB",
-    time: "12:15 pm PDT",
-    socialsLink: {
-      twitch: "./",
-      twitter: "",
+      twitter: "/",
+      github: "/",
+      linkedin: "/",
     },
   },
 ];
