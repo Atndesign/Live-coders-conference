@@ -81,7 +81,7 @@ class Header extends Component {
         <nav className="desktop-only header__nav-desktop">
           <ul className="desktop-nav__list">
             <li className="nav-list__item">
-              <a href="/">Home</a>
+              <a href="./">Home</a>
             </li>
             <li className="nav-list__item">
               <a href="#speakers">Speakers</a>
