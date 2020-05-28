@@ -20,7 +20,9 @@ class SpeakerCard extends Component {
             }}
           ></div>
           <p className="speaker-card__name">
-            {this.props.current.name + ` (${this.props.current.twitchName})`}
+            {this.props.current.name +
+              (this.props.current.twitchName &&
+                ` (${this.props.current.twitchName})`)}
           </p>
           <p className="speaker-card__title">{this.props.current.title}</p>
           <p className="speaker-card__time">{this.props.current.time}</p>
