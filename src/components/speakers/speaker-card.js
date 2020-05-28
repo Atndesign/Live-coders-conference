@@ -26,7 +26,11 @@ class SpeakerCard extends Component {
           <p className="speaker-card__time">{this.props.current.time}</p>
           <div className="speaker-card__socials">
             {this.props.current.socialsLink.github !== "" && (
-              <a href={this.props.current.socialsLink.github} target="_blank">
+              <a
+                href={this.props.current.socialsLink.github}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img
                   srcSet="./img/icons/github.svg"
                   src="./img/icons/github.png"
@@ -36,7 +40,11 @@ class SpeakerCard extends Component {
               </a>
             )}
             {this.props.current.socialsLink.linkedin !== "" && (
-              <a href={this.props.current.socialsLink.linkedin} target="_blank">
+              <a
+                href={this.props.current.socialsLink.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img
                   srcSet="./img/icons/linkedin.svg"
                   src="./img/icons/linkedin.png"
@@ -46,7 +54,11 @@ class SpeakerCard extends Component {
               </a>
             )}
             {this.props.current.socialsLink.twitch !== "" && (
-              <a href={this.props.current.socialsLink.twitch} target="_blank">
+              <a
+                href={this.props.current.socialsLink.twitch}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img
                   srcSet="./img/icons/twitch.svg"
                   src="./img/icons/twitch.png"
@@ -56,7 +68,11 @@ class SpeakerCard extends Component {
               </a>
             )}
             {this.props.current.socialsLink.twitter !== "" && (
-              <a href={this.props.current.socialsLink.twitter} target="_blank">
+              <a
+                href={this.props.current.socialsLink.twitter}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img
                   srcSet="./img/icons/twitter.svg"
                   src="./img/icons/twitter.png"
