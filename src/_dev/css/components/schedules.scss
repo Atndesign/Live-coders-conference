@@ -59,6 +59,11 @@
             margin-bottom: $spacer * 2;
         }
     }
+
+    .schedule__unit-conversion {
+        padding: $spacer / 2;
+        margin-bottom: $spacer;
+    }
 }
 
 @include media-breakpoint-tablet {
@@ -99,6 +104,10 @@
             margin: 0;
             margin-bottom: $spacer *2;
 
+        }
+
+        .schedule__unit-conversion {
+            padding: $spacer / 2 $spacer * 2;
         }
     }
 }
