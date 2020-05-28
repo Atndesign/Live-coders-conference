@@ -40,7 +40,7 @@ class ScheduleCard extends Component {
                 alt="watch"
                 className="schedule-time__watch"
               />
-              {this.props.infos.times.start}
+              {this.props.infos.times.end}
             </span>
           </div>
         </div>
