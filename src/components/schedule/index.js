@@ -210,7 +210,6 @@ class Schedules extends Component {
             <option value="PDT">PDT</option>
             <option value="EDT">EDT</option>
           </select>
-          <button onClick={(e) => this.displayNewUnit("edt")}>TEST</button>
           <a
             href="./schedules"
             download="schedules.pdf"
