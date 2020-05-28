@@ -30,21 +30,6 @@ class ScheduleCard extends Component {
               />
               {this.props.infos.times.start}
             </span>
-            <img
-              srcSet="./img/icons/arrrow-black.svg"
-              src="./img/icons/arrrow-black.png"
-              className="schedule-time__arrow"
-              alt="arrow"
-            />
-            <span className="schedule__time">
-              <img
-                srcSet="./img/icons/watch-purple.svg"
-                src="./img/icons/watch-purple.png"
-                alt="watch"
-                className="schedule-time__watch"
-              />
-              {this.props.infos.times.end}
-            </span>
           </div>
         </div>
       </div>
