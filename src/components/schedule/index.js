@@ -160,6 +160,7 @@ class Schedules extends Component {
       schedule.times.end = this.changeTimeUnit(schedule.times.end, unit);
       console.log(schedule.times.end);
       tempArr.push(schedule);
+      return null;
     });
     this.setState({
       schedules: {
@@ -205,7 +206,7 @@ class Schedules extends Component {
             changes!) Each talk will last about 45 minutes.
           </p>
           <a
-            href="./schedules"
+            href="./file/schedules.pdf"
             download="schedules.pdf"
             className="schedules__download-btn"
           >
