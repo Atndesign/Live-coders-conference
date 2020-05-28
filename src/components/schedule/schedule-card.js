@@ -16,6 +16,9 @@ class ScheduleCard extends Component {
           ></div>
         </div>
         <div className="schedule-card__infos">
+          <p className="schedule-card__title">
+            <strong>{this.props.infos.speaker}</strong>
+          </p>
           <p className="schedule-card__title">{this.props.infos.title}</p>
           <div className="schedule-infos__time">
             <span className="schedule__time">

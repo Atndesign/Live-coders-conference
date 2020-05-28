@@ -9,6 +9,7 @@ class Schedules extends Component {
       a: [
         {
           avatar: "",
+          speaker: "",
           title: "Pre-Party",
           times: {
             start: "04:00 AM PDT",
@@ -17,6 +18,7 @@ class Schedules extends Component {
         },
         {
           avatar: "",
+          speaker: "Jeffrey Fritz / CSharpFritz",
           title:
             "Native Code, WebAssembly, and C# - Build with Blazo by Jeffrey Fritz / CSharpFritz",
           times: {
@@ -25,7 +27,8 @@ class Schedules extends Component {
           },
         },
         {
-          avatar: "",
+          avatar: "Jimmy Engström",
+          speaker: "Jemina Abu",
           title: "Manipulating Webpages using DevTools",
           times: {
             start: "06:30 AM PDT",
@@ -34,6 +37,7 @@ class Schedules extends Component {
         },
         {
           avatar: "",
+          speaker: "Jimmy Engström",
           title: "Blazor Web Bluetooth",
           times: {
             start: "07:00 AM PDT",
@@ -42,6 +46,7 @@ class Schedules extends Component {
         },
         {
           avatar: "",
+          speaker: "Trezy / TrezyCodes",
           title: "What disabled people think of your website",
           times: {
             start: "07:30 AM PDT",
@@ -50,6 +55,7 @@ class Schedules extends Component {
         },
         {
           avatar: "",
+          speaker: "Sarah Dutkiewicz / Sadukie",
           title: "Data Adventures with Azure Notebooks",
           times: {
             start: "08:00 AM PDT",
@@ -58,6 +64,7 @@ class Schedules extends Component {
         },
         {
           avatar: "",
+          speaker: "James Montemagno",
           title: "Building a Friend System with No Servers & No Usernames",
           times: {
             start: "08:30 AM PDT",
@@ -66,6 +73,7 @@ class Schedules extends Component {
         },
         {
           avatar: "",
+          speaker: "Jason Harrison / doctorargus",
           title: "Augmented Reality with Unity - A History and a How-To",
           times: {
             start: "09:30 AM PDT",
@@ -74,6 +82,7 @@ class Schedules extends Component {
         },
         {
           avatar: "",
+          speaker: "Jeff Blankenburg",
           title: "Building Your First Skill for Alexa",
           times: {
             start: "10:00 AM PDT",
@@ -82,6 +91,7 @@ class Schedules extends Component {
         },
         {
           avatar: "",
+          speaker: "Nina Zakharenko / nnjaio",
           title: "Light Up Your Life, With Python and LEDs!",
           times: {
             start: "10:30 AM PDT",
@@ -90,6 +100,7 @@ class Schedules extends Component {
         },
         {
           avatar: "",
+          speaker: "Mark Miller / CodeRushed",
           title: "The Science of Great UI",
           times: {
             start: "11:00 AM PDT",
@@ -98,6 +109,7 @@ class Schedules extends Component {
         },
         {
           avatar: "",
+          speaker: "Bryan Robinson",
           title: "Join the CSS Future with CSS Grid",
           times: {
             start: "11:30 AM PDT",
@@ -106,8 +118,9 @@ class Schedules extends Component {
         },
         {
           avatar: "",
+          speaker: "Joe Karlsson",
           title:
-            "Joe Karlsson An Introduction To IoT (Internet of Toilets); Or How I built an IoT Kitty Litter Box Using JavaScript",
+            "An Introduction To IoT (Internet of Toilets); Or How I built an IoT Kitty Litter Box Using JavaScript",
           times: {
             start: "12:30 PM PDT",
             end: "01:00 PM PDT",
@@ -115,6 +128,7 @@ class Schedules extends Component {
         },
         {
           avatar: "",
+          speaker: "Raphael Mun / Instafluff",
           title: "Game Design is a Science!",
           times: {
             start: "01:00 PM PDT",
@@ -123,6 +137,7 @@ class Schedules extends Component {
         },
         {
           avatar: "",
+          speaker: "Miko Charbonneau / drmikachu",
           title: "Picking the Right Game Engine",
           times: {
             start: "01:30 PM PDT",
@@ -131,6 +146,7 @@ class Schedules extends Component {
         },
         {
           avatar: "",
+          speaker: "Dr. Mahmood Hikmet / sadmoody",
           title:
             "Everything you need to know to have an argument about Blockchain",
           times: {
@@ -140,6 +156,7 @@ class Schedules extends Component {
         },
         {
           avatar: "",
+          speaker: "Tyler Leonhardt",
           title:
             "Auto generate code to interact with your REST API using AutoRest",
           times: {
