@@ -171,7 +171,7 @@ class Schedules extends Component {
   changeTimeUnit = (value, unit) => {
     let splitted = value.split(":");
     let num = parseInt(splitted[0]);
-    let time = splitted[1].slice(-6, -3);
+    let time = splitted[1].slice(-6, -4);
     let hour;
     let minutes = splitted[1].slice(0, 3);
     if (unit.toUpperCase() === this.state.currentUnit) return value;
@@ -202,14 +202,8 @@ class Schedules extends Component {
           <h2 className="section__title --white">Schedules</h2>
           <p className="schedules__desc">
             Schedule is tentative and subject to change (will update any
-            changes!) Due to the amount of speakers we have, we are breaking up
-            the conference into two parts, Part A and Part B. The listed times
-            are in PDT. Each talk will last about 45 minutes.
+            changes!) Each talk will last about 45 minutes.
           </p>
-          <select onChange={(e) => this.displayNewUnit(e)} name="" id="">
-            <option value="PDT">PDT</option>
-            <option value="EDT">EDT</option>
-          </select>
           <a
             href="./schedules"
             download="schedules.pdf"
@@ -229,6 +223,15 @@ class Schedules extends Component {
               <p className="schedules__conf-title --bold">
                 Thursday April 9th 2020
               </p>
+              <select
+                className="schedule__unit-conversion"
+                onChange={(e) => this.displayNewUnit(e)}
+                name=""
+                id=""
+              >
+                <option value="PDT">PDT</option>
+                <option value="EDT">EDT</option>
+              </select>
               <div className="schedules__card-container">
                 {this.state.schedules.a.map((e, index) => (
                   <ScheduleCard infos={e} key={e.title} index={index} />
