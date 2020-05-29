@@ -5,6 +5,7 @@ import ScheduleCard from "./schedule-card";
 class Schedules extends Component {
   state = {
     currentUnit: "PDT",
+    currentTimeZone: +7,
     schedules: {
       a: [
         {
@@ -12,8 +13,8 @@ class Schedules extends Component {
           speaker: "",
           title: "Pre-Party",
           times: {
-            start: "04:00 AM PDT",
-            end: "06:00 AM PDT",
+            start: "04:00 PDT",
+            end: "06:00 PDT",
           },
         },
         {
@@ -22,8 +23,8 @@ class Schedules extends Component {
           title:
             "Native Code, WebAssembly, and C# - Build with Blazo by Jeffrey Fritz / CSharpFritz",
           times: {
-            start: "06:00 AM PDT",
-            end: "09:30 AM PDT",
+            start: "06:00 PDT",
+            end: "09:30 PDT",
           },
         },
         {
@@ -31,8 +32,8 @@ class Schedules extends Component {
           speaker: "Jemina Abu",
           title: "Manipulating Webpages using DevTools",
           times: {
-            start: "06:30 AM PDT",
-            end: "07:00 AM PDT",
+            start: "06:30 PDT",
+            end: "07:00 PDT",
           },
         },
         {
@@ -40,8 +41,8 @@ class Schedules extends Component {
           speaker: "Jimmy Engström",
           title: "Blazor Web Bluetooth",
           times: {
-            start: "07:00 AM PDT",
-            end: "07:30 AM PDT",
+            start: "07:00 PDT",
+            end: "07:30 PDT",
           },
         },
         {
@@ -49,8 +50,8 @@ class Schedules extends Component {
           speaker: "Trezy / TrezyCodes",
           title: "What disabled people think of your website",
           times: {
-            start: "07:30 AM PDT",
-            end: "08:00 AM PDT",
+            start: "07:30 PDT",
+            end: "08:00 PDT",
           },
         },
         {
@@ -58,17 +59,17 @@ class Schedules extends Component {
           speaker: "Sarah Dutkiewicz / Sadukie",
           title: "Data Adventures with Azure Notebooks",
           times: {
-            start: "08:00 AM PDT",
-            end: "08:30 AM PDT",
+            start: "08:00 PDT",
+            end: "08:30 PDT",
           },
         },
         {
           avatar: "",
-          speaker: "James Montemagno",
-          title: "Building a Friend System with No Servers & No Usernames",
+          speaker: "es Montemagno",
+          title: "Building a Friend System with No Servers & No Useres",
           times: {
-            start: "08:30 AM PDT",
-            end: "09:30 AM PDT",
+            start: "08:30 PDT",
+            end: "09:30 PDT",
           },
         },
         {
@@ -76,8 +77,8 @@ class Schedules extends Component {
           speaker: "Jason Harrison / doctorargus",
           title: "Augmented Reality with Unity - A History and a How-To",
           times: {
-            start: "09:30 AM PDT",
-            end: "10:00 AM PDT",
+            start: "09:30 PDT",
+            end: "10:00 PDT",
           },
         },
         {
@@ -85,8 +86,8 @@ class Schedules extends Component {
           speaker: "Jeff Blankenburg",
           title: "Building Your First Skill for Alexa",
           times: {
-            start: "10:00 AM PDT",
-            end: "10:30 AM PDT",
+            start: "10:00 PDT",
+            end: "10:30 PDT",
           },
         },
         {
@@ -94,8 +95,8 @@ class Schedules extends Component {
           speaker: "Nina Zakharenko / nnjaio",
           title: "Light Up Your Life, With Python and LEDs!",
           times: {
-            start: "10:30 AM PDT",
-            end: "11:00 AM PDT",
+            start: "10:30 PDT",
+            end: "11:00 PDT",
           },
         },
         {
@@ -103,8 +104,8 @@ class Schedules extends Component {
           speaker: "Mark Miller / CodeRushed",
           title: "The Science of Great UI",
           times: {
-            start: "11:00 AM PDT",
-            end: "11:30 AM PDT",
+            start: "11:00 PDT",
+            end: "11:30 PDT",
           },
         },
         {
@@ -112,8 +113,8 @@ class Schedules extends Component {
           speaker: "Bryan Robinson",
           title: "Join the CSS Future with CSS Grid",
           times: {
-            start: "11:30 AM PDT",
-            end: "12:30 PM PDT",
+            start: "11:30 PDT",
+            end: "12:30  PDT",
           },
         },
         {
@@ -122,26 +123,26 @@ class Schedules extends Component {
           title:
             "An Introduction To IoT (Internet of Toilets); Or How I built an IoT Kitty Litter Box Using JavaScript",
           times: {
-            start: "12:30 PM PDT",
-            end: "01:00 PM PDT",
+            start: "12:30  PDT",
+            end: "13:00  PDT",
           },
         },
         {
           avatar: "",
           speaker: "Raphael Mun / Instafluff",
-          title: "Game Design is a Science!",
+          title: "e Design is a Science!",
           times: {
-            start: "01:00 PM PDT",
-            end: "01:30 PM PDT",
+            start: "13:00  PDT",
+            end: "13:30  PDT",
           },
         },
         {
           avatar: "",
           speaker: "Miko Charbonneau / drmikachu",
-          title: "Picking the Right Game Engine",
+          title: "Picking the Right e Engine",
           times: {
-            start: "01:30 PM PDT",
-            end: "02:00 PM PDT",
+            start: "13:30  PDT",
+            end: "14:00  PDT",
           },
         },
         {
@@ -150,8 +151,8 @@ class Schedules extends Component {
           title:
             "Everything you need to know to have an argument about Blockchain",
           times: {
-            start: "02:00 PM PDT",
-            end: "02:30 PM PDT",
+            start: "14:00  PDT",
+            end: "14:30  PDT",
           },
         },
         {
@@ -160,22 +161,27 @@ class Schedules extends Component {
           title:
             "Auto generate code to interact with your REST API using AutoRest",
           times: {
-            start: "02:30 PM PDT",
-            end: "03:30 PM PDT",
+            start: "14:30  PDT",
+            end: "15:30  PDT",
           },
         },
       ],
     },
   };
 
-  displayNewUnit = (e) => {
+  componentDidMount() {
+    this.displayNewUnit("UTC");
+  }
+
+  handleUnitChange(e) {
     e.preventDefault();
+    this.displayNewUnit(e.target.value);
+  }
+  displayNewUnit = (unit) => {
     let tempArr = [];
-    let unit = e.target.value;
     this.state.schedules.a.map((schedule) => {
       schedule.times.start = this.changeTimeUnit(schedule.times.start, unit);
       schedule.times.end = this.changeTimeUnit(schedule.times.end, unit);
-      console.log(schedule.times.end);
       tempArr.push(schedule);
       return null;
     });
@@ -186,31 +192,31 @@ class Schedules extends Component {
     });
   };
 
+  convertHourToUTC(hour) {
+    let newHour = hour;
+    for (let i = 0; i < 7; i++) {
+      newHour += 1;
+      if (newHour <= 0) {
+        newHour = 24;
+      }
+    }
+    return newHour;
+  }
+
   changeTimeUnit = (value, unit) => {
-    let hour;
+    let dayTime = "PM";
     let splitted = value.split(":");
-    let num = parseInt(splitted[0]);
-    let time = splitted[1].slice(-6, -4);
+    let hourInt = parseInt(splitted[0]);
+    let hour = this.convertHourToUTC(hourInt);
+    if (hour <= 12) {
+      dayTime = "AM";
+    }
+    console.log(hour);
     let minutes = splitted[1].slice(0, 3);
-    if (unit.toUpperCase() === this.state.currentUnit) return value;
-    else if (unit.toUpperCase() === "EDT" && this.state.currentUnit === "PDT") {
-      hour = num += 3;
-      this.setState({
-        currentUnit: unit,
-      });
-    } else if (
-      unit.toUpperCase() === "PDT" &&
-      this.state.currentUnit === "EDT"
-    ) {
-      hour = num -= 3;
-      this.setState({
-        currentUnit: unit,
-      });
-    }
     if (hour < 10) {
-      return `0${hour}:${minutes}${time} ${unit}`;
+      return `0${hour}:${minutes}${dayTime} ${unit}`;
     }
-    return `${hour}:${minutes}${time} ${unit}`;
+    return `${hour}:${minutes}${dayTime} ${unit}`;
   };
 
   render() {
@@ -241,12 +247,13 @@ class Schedules extends Component {
           </p>
           <select
             className="schedule__unit-conversion"
-            onChange={(e) => this.displayNewUnit(e)}
-            name=""
+            onChange={(e) => this.handleUnitChange(e)}
+            e=""
             id=""
           >
             <option value="PDT">PDT</option>
             <option value="EDT">EDT</option>
+            <option value="UTC">UTC</option>
           </select>
           <div className="schedules__card-container">
             <div className="row">
@@ -254,17 +261,6 @@ class Schedules extends Component {
                 <ScheduleCard infos={e} key={e.title} index={index} />
               ))}
             </div>
-            {/* <div className="col-md-6">
-              <p className="schedules__conf-title">Conference Part B</p>
-              <p className="schedules__conf-title --bold">
-                Thursday April 9th 2020
-              </p>
-              <div className="schedules__card-container">
-                {schedules.b.map((e, index) => (
-                  <ScheduleCard infos={e} key={e.title} index={index} />
-                ))}
-              </div>
-            </div> */}
           </div>
         </div>
       </section>
