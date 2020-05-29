@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Live-coders-conference/static/css/main.f80ec622.chunk.css",
-    "main.js": "/Live-coders-conference/static/js/main.5455c357.chunk.js",
-    "main.js.map": "/Live-coders-conference/static/js/main.5455c357.chunk.js.map",
+    "main.js": "/Live-coders-conference/static/js/main.7185543a.chunk.js",
+    "main.js.map": "/Live-coders-conference/static/js/main.7185543a.chunk.js.map",
     "runtime-main.js": "/Live-coders-conference/static/js/runtime-main.09467ad6.js",
     "runtime-main.js.map": "/Live-coders-conference/static/js/runtime-main.09467ad6.js.map",
     "static/js/2.e0d0b6ae.chunk.js": "/Live-coders-conference/static/js/2.e0d0b6ae.chunk.js",
     "static/js/2.e0d0b6ae.chunk.js.map": "/Live-coders-conference/static/js/2.e0d0b6ae.chunk.js.map",
     "index.html": "/Live-coders-conference/index.html",
-    "precache-manifest.144d0d4ad9a7b5b5d2685d1f97bdba2c.js": "/Live-coders-conference/precache-manifest.144d0d4ad9a7b5b5d2685d1f97bdba2c.js",
+    "precache-manifest.10af2ca8142fc18a604f635370eab755.js": "/Live-coders-conference/precache-manifest.10af2ca8142fc18a604f635370eab755.js",
     "service-worker.js": "/Live-coders-conference/service-worker.js",
     "static/css/main.f80ec622.chunk.css.map": "/Live-coders-conference/static/css/main.f80ec622.chunk.css.map",
     "static/js/2.e0d0b6ae.chunk.js.LICENSE.txt": "/Live-coders-conference/static/js/2.e0d0b6ae.chunk.js.LICENSE.txt",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.09467ad6.js",
     "static/js/2.e0d0b6ae.chunk.js",
     "static/css/main.f80ec622.chunk.css",
-    "static/js/main.5455c357.chunk.js"
+    "static/js/main.7185543a.chunk.js"
   ]
 }
