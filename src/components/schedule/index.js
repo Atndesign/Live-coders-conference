@@ -269,21 +269,21 @@ class Schedules extends Component {
     let newHour = hour;
     if (currentTimeZone < 0) {
       for (let i = 0; i < Math.abs(currentTimeZone); i++) {
-        if (newHour <= 0) {
-          newHour = 24;
+        newHour -= 1;
+        if (newHour < 0) {
+          newHour = 23;
         } else if (newHour >= 24) {
           newHour = 0;
         }
-        newHour -= 1;
       }
     } else {
       for (let i = 0; i < Math.abs(currentTimeZone); i++) {
-        if (newHour <= 0) {
+        newHour += 1;
+        if (newHour < 0) {
           newHour = 24;
         } else if (newHour >= 24) {
           newHour = 0;
         }
-        newHour += 1;
       }
     }
     return newHour;
@@ -302,7 +302,7 @@ class Schedules extends Component {
       return `0${Math.floor(hour)}:${minutes}${dayTime} ${unit}`;
     }
     if (hour > 12) {
-      return `${hour - 12}:${minutes}${dayTime} ${unit}`;
+      return `${hour}:${minutes}${dayTime} ${unit}`;
     } else {
       return `${hour}:${minutes}${dayTime} ${unit}`;
     }
