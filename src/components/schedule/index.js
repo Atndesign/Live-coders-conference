@@ -2,10 +2,11 @@ import React, { Component } from "react";
 
 import ScheduleCard from "./schedule-card";
 
+let currentTimeZone = 7;
+
 class Schedules extends Component {
   state = {
     currentUnit: "PDT",
-    currentTimeZone: +7,
     schedules: {
       a: [
         {
@@ -169,16 +170,84 @@ class Schedules extends Component {
     },
   };
 
-  componentDidMount() {
-    this.displayNewUnit("UTC");
-  }
-
   handleUnitChange(e) {
     e.preventDefault();
+    if (e.target.value === this.state.currentUnit) return;
     this.displayNewUnit(e.target.value);
   }
+
   displayNewUnit = (unit) => {
     let tempArr = [];
+    if (unit === "PDT" && this.state.currentUnit === "EDT") {
+      currentTimeZone = -3;
+      this.setState({
+        currentUnit: unit,
+      });
+    } else if (unit === "PDT" && this.state.currentUnit === "UTC") {
+      currentTimeZone = -7;
+      this.setState({
+        currentUnit: unit,
+      });
+    } else if (unit === "PDT" && this.state.currentUnit === "AEST") {
+      currentTimeZone = -17;
+      this.setState({
+        currentUnit: unit,
+      });
+    }
+
+    if (unit === "EDT" && this.state.currentUnit === "PDT") {
+      currentTimeZone = +3;
+      this.setState({
+        currentUnit: unit,
+      });
+    } else if (unit === "EDT" && this.state.currentUnit === "UTC") {
+      currentTimeZone = -4;
+      this.setState({
+        currentUnit: unit,
+      });
+    } else if (unit === "EDT" && this.state.currentUnit === "AEST") {
+      currentTimeZone = -14;
+      this.setState({
+        currentUnit: unit,
+      });
+    }
+
+    if (unit === "UTC" && this.state.currentUnit === "EDT") {
+      currentTimeZone = +4;
+      this.setState({
+        currentUnit: unit,
+      });
+    } else if (unit === "UTC" && this.state.currentUnit === "PDT") {
+      currentTimeZone = +7;
+      this.setState({
+        currentUnit: unit,
+      });
+    } else if (unit === "UTC" && this.state.currentUnit === "AEST") {
+      currentTimeZone = -10;
+      this.setState({
+        currentUnit: unit,
+      });
+    }
+
+    if (unit === "AEST" && this.state.currentUnit === "EDT") {
+      currentTimeZone = +14;
+      this.setState({
+        currentUnit: unit,
+      });
+    } else if (unit === "AEST" && this.state.currentUnit === "PDT") {
+      currentTimeZone = +17;
+      this.setState({
+        currentUnit: unit,
+      });
+    } else if (unit === "AEST" && this.state.currentUnit === "UTC") {
+      currentTimeZone = +10;
+      this.setState({
+        currentUnit: unit,
+      });
+    }
+
+    //--------------------------//
+
     this.state.schedules.a.map((schedule) => {
       schedule.times.start = this.changeTimeUnit(schedule.times.start, unit);
       schedule.times.end = this.changeTimeUnit(schedule.times.end, unit);
@@ -194,10 +263,23 @@ class Schedules extends Component {
 
   convertHourToUTC(hour) {
     let newHour = hour;
-    for (let i = 0; i < 7; i++) {
-      newHour += 1;
+    if (currentTimeZone < 0) {
+      for (let i = 0; i < Math.abs(currentTimeZone); i++) {
+        newHour -= 1;
+      }
       if (newHour <= 0) {
         newHour = 24;
+      } else if (newHour >= 24) {
+        newHour = 0;
+      }
+    } else {
+      for (let i = 0; i < currentTimeZone; i++) {
+        newHour += 1;
+        if (newHour <= 0) {
+          newHour = 24;
+        } else if (newHour >= 24) {
+          newHour = 0;
+        }
       }
     }
     return newHour;
@@ -211,7 +293,6 @@ class Schedules extends Component {
     if (hour <= 12) {
       dayTime = "AM";
     }
-    console.log(hour);
     let minutes = splitted[1].slice(0, 3);
     if (hour < 10) {
       return `0${hour}:${minutes}${dayTime} ${unit}`;
@@ -252,8 +333,9 @@ class Schedules extends Component {
             id=""
           >
             <option value="PDT">PDT</option>
-            <option value="EDT">EDT</option>
             <option value="UTC">UTC</option>
+            <option value="EDT">EDT</option>
+            <option value="AEST">AEST</option>
           </select>
           <div className="schedules__card-container">
             <div className="row">
