@@ -29,7 +29,7 @@ class Schedules extends Component {
           },
         },
         {
-          avatar: "Jimmy Engström",
+          avatar: "",
           speaker: "Jemina Abu",
           title: "Manipulating Webpages using DevTools",
           times: {
@@ -66,7 +66,7 @@ class Schedules extends Component {
         },
         {
           avatar: "",
-          speaker: "es Montemagno",
+          speaker: "James Montemagno",
           title: "Building a Friend System with No Servers & No Useres",
           times: {
             start: "08:30 PDT",
@@ -170,14 +170,19 @@ class Schedules extends Component {
     },
   };
 
+  componentWillMount() {
+    this.displayNewUnit("PDT");
+  }
+
   handleUnitChange(e) {
     e.preventDefault();
-    if (e.target.value === this.state.currentUnit) return;
+
     this.displayNewUnit(e.target.value);
   }
 
   displayNewUnit = (unit) => {
     let tempArr = [];
+    if (unit === this.state.currentUnit) return;
     if (unit === "PDT" && this.state.currentUnit === "EDT") {
       currentTimeZone = -3;
       this.setState({
@@ -250,7 +255,6 @@ class Schedules extends Component {
 
     this.state.schedules.a.map((schedule) => {
       schedule.times.start = this.changeTimeUnit(schedule.times.start, unit);
-      schedule.times.end = this.changeTimeUnit(schedule.times.end, unit);
       tempArr.push(schedule);
       return null;
     });
@@ -265,21 +269,21 @@ class Schedules extends Component {
     let newHour = hour;
     if (currentTimeZone < 0) {
       for (let i = 0; i < Math.abs(currentTimeZone); i++) {
-        newHour -= 1;
-      }
-      if (newHour <= 0) {
-        newHour = 24;
-      } else if (newHour >= 24) {
-        newHour = 0;
-      }
-    } else {
-      for (let i = 0; i < currentTimeZone; i++) {
-        newHour += 1;
         if (newHour <= 0) {
           newHour = 24;
         } else if (newHour >= 24) {
           newHour = 0;
         }
+        newHour -= 1;
+      }
+    } else {
+      for (let i = 0; i < Math.abs(currentTimeZone); i++) {
+        if (newHour <= 0) {
+          newHour = 24;
+        } else if (newHour >= 24) {
+          newHour = 0;
+        }
+        newHour += 1;
       }
     }
     return newHour;
@@ -290,14 +294,18 @@ class Schedules extends Component {
     let splitted = value.split(":");
     let hourInt = parseInt(splitted[0]);
     let hour = this.convertHourToUTC(hourInt);
-    if (hour <= 12) {
+    if (hour <= 12 || hour === 24) {
       dayTime = "AM";
     }
     let minutes = splitted[1].slice(0, 3);
     if (hour < 10) {
-      return `0${hour}:${minutes}${dayTime} ${unit}`;
+      return `0${Math.floor(hour)}:${minutes}${dayTime} ${unit}`;
     }
-    return `${hour}:${minutes}${dayTime} ${unit}`;
+    if (hour > 12) {
+      return `${hour - 12}:${minutes}${dayTime} ${unit}`;
+    } else {
+      return `${hour}:${minutes}${dayTime} ${unit}`;
+    }
   };
 
   render() {
