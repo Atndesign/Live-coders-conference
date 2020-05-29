@@ -1,3 +1,7 @@
+.schedule-card__container-col {
+    margin-bottom: $spacer;
+}
+
 .schedule-card {
     display: flex;
     font-size: 14px;
@@ -6,7 +10,7 @@
     background: white;
     border: 1px solid #c9c9c9;
     border-radius: 8px;
-    margin-bottom: $spacer;
+    height: 100%;
 
     &:last-child {
         margin-bottom: $spacer * 2;
@@ -31,9 +35,15 @@
             margin-bottom: $spacer;
         }
 
+        .schedule-infos__time {
+            justify-self: flex-end;
+        }
+
         .schedule__time {
             margin: 0 $spacer / 2 0 0;
             font-size: 12px;
+            display: flex;
+            align-items: center;
         }
 
         .schedule-time__watch {
@@ -43,5 +53,12 @@
         .schedule-time__arrow {
             margin-right: $spacer / 2;
         }
+    }
+}
+
+@include media-breakpoint-desktop {
+    .schedule-card__infos {
+        height: 100%;
+        justify-content: space-between;
     }
 }

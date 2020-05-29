@@ -81,7 +81,7 @@ class Schedules extends Component {
           },
         },
         {
-          avatar: "",
+          avatar: "./img/speakers/JeffBlankenburg.jpg",
           speaker: "Jeff Blankenburg",
           title: "Building Your First Skill for Alexa",
           times: {
@@ -117,7 +117,7 @@ class Schedules extends Component {
           },
         },
         {
-          avatar: "",
+          avatar: "./img/speakers/JoeKarlsson.jpg",
           speaker: "Joe Karlsson",
           title:
             "An Introduction To IoT (Internet of Toilets); Or How I built an IoT Kitty Litter Box Using JavaScript",
@@ -187,10 +187,10 @@ class Schedules extends Component {
   };
 
   changeTimeUnit = (value, unit) => {
+    let hour;
     let splitted = value.split(":");
     let num = parseInt(splitted[0]);
     let time = splitted[1].slice(-6, -4);
-    let hour;
     let minutes = splitted[1].slice(0, 3);
     if (unit.toUpperCase() === this.state.currentUnit) return value;
     else if (unit.toUpperCase() === "EDT" && this.state.currentUnit === "PDT") {
@@ -235,26 +235,24 @@ class Schedules extends Component {
             />
             <span>Download the schedules</span>
           </a>
-          <div className="row">
-            <div className="col-md-6">
-              <p className="schedules__conf-title">Conference Part A</p>
-              <p className="schedules__conf-title --bold">
-                Thursday April 9th 2020
-              </p>
-              <select
-                className="schedule__unit-conversion"
-                onChange={(e) => this.displayNewUnit(e)}
-                name=""
-                id=""
-              >
-                <option value="PDT">PDT</option>
-                <option value="EDT">EDT</option>
-              </select>
-              <div className="schedules__card-container">
-                {this.state.schedules.a.map((e, index) => (
-                  <ScheduleCard infos={e} key={e.title} index={index} />
-                ))}
-              </div>
+          <p className="schedules__conf-title">Conference Part A</p>
+          <p className="schedules__conf-title --bold">
+            Thursday April 9th 2020
+          </p>
+          <select
+            className="schedule__unit-conversion"
+            onChange={(e) => this.displayNewUnit(e)}
+            name=""
+            id=""
+          >
+            <option value="PDT">PDT</option>
+            <option value="EDT">EDT</option>
+          </select>
+          <div className="schedules__card-container">
+            <div className="row">
+              {this.state.schedules.a.map((e, index) => (
+                <ScheduleCard infos={e} key={e.title} index={index} />
+              ))}
             </div>
             {/* <div className="col-md-6">
               <p className="schedules__conf-title">Conference Part B</p>
