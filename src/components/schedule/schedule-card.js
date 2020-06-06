@@ -3,6 +3,12 @@ import React, { Component } from "react";
 class ScheduleCard extends Component {
   state = {};
   render() {
+    let avatar;
+    if (this.props.infos.avatar !== "") {
+      avatar = this.props.infos.avatar;
+    } else {
+      avatar = "./img/speakers/placeholder.jpg";
+    }
     return (
       <div className="col-lg-4 col-md-6 schedule-card__container-col">
         <div
@@ -14,7 +20,7 @@ class ScheduleCard extends Component {
             <div
               className="schedule-avatar__container"
               style={{
-                backgroundImage: "url(" + this.props.infos.avatar + ")",
+                backgroundImage: "url(" + avatar + ")",
               }}
             ></div>
           </div>

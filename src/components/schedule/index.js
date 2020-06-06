@@ -6,7 +6,7 @@ let currentTimeZone = 7;
 
 class Schedules extends Component {
   state = {
-    currentUnit: "PDT",
+    currentUnit: "EST",
     schedules: {
       a: [
         {
@@ -14,18 +14,15 @@ class Schedules extends Component {
           speaker: "",
           title: "Pre-Party",
           times: {
-            start: "04:00 PDT",
-            end: "06:00 PDT",
+            start: "07:00 EST",
           },
         },
         {
           avatar: "",
-          speaker: "Jeffrey Fritz / CSharpFritz",
-          title:
-            "Native Code, WebAssembly, and C# - Build with Blazo by Jeffrey Fritz / CSharpFritz",
+          speaker: "Jeff Fritz",
+          title: "Native Code, WebAssembly, and C# - Build with Blazor",
           times: {
-            start: "06:00 PDT",
-            end: "09:30 PDT",
+            start: "09:00 EST",
           },
         },
         {
@@ -33,53 +30,56 @@ class Schedules extends Component {
           speaker: "Jemina Abu",
           title: "Manipulating Webpages using DevTools",
           times: {
-            start: "06:30 PDT",
-            end: "07:00 PDT",
+            start: "09:30 EST",
           },
         },
         {
-          avatar: "",
+          avatar: "./img/speakers/JimmyEngstrom.jpg",
           speaker: "Jimmy Engström",
           title: "Blazor Web Bluetooth",
           times: {
-            start: "07:00 PDT",
-            end: "07:30 PDT",
+            start: "10:00 EST",
           },
         },
         {
           avatar: "",
-          speaker: "Trezy / TrezyCodes",
-          title: "What disabled people think of your website",
+          speaker: "Nodebotanist",
+          title: "",
           times: {
-            start: "07:30 PDT",
-            end: "08:00 PDT",
+            start: "10:30 EST",
           },
         },
         {
           avatar: "",
-          speaker: "Sarah Dutkiewicz / Sadukie",
+          speaker: `Sarah "sadukie" Dutkiewicz`,
           title: "Data Adventures with Azure Notebooks",
           times: {
-            start: "08:00 PDT",
-            end: "08:30 PDT",
+            start: "11:00 EST",
           },
         },
         {
           avatar: "",
           speaker: "James Montemagno",
-          title: "Building a Friend System with No Servers & No Useres",
+          title: "Building A Friend System with No Servers & No Usernames",
           times: {
-            start: "08:30 PDT",
-            end: "09:30 PDT",
+            start: "11:30 EST",
           },
         },
         {
-          avatar: "",
-          speaker: "Jason Harrison / doctorargus",
+          avatar: "./img/speakers/Instafluff-Raphael-Mun.jpg",
+          speaker: "Raphael Mun",
+          title:
+            "PRE- RECORDED 5 minute - Cooking for Coders, a Mug Recipe Quickie!",
+          times: {
+            start: "12:10 EST",
+          },
+        },
+        {
+          avatar: "./img/speakers/JasonHarrison.jpg",
+          speaker: "Jason Harrison",
           title: "Augmented Reality with Unity - A History and a How-To",
           times: {
-            start: "09:30 PDT",
-            end: "10:00 PDT",
+            start: "12:30 EST",
           },
         },
         {
@@ -87,26 +87,23 @@ class Schedules extends Component {
           speaker: "Jeff Blankenburg",
           title: "Building Your First Skill for Alexa",
           times: {
-            start: "10:00 PDT",
-            end: "10:30 PDT",
+            start: "13:00 EST",
           },
         },
         {
           avatar: "",
-          speaker: "Nina Zakharenko / nnjaio",
+          speaker: "Nina Zakharenko",
           title: "Light Up Your Life, With Python and LEDs!",
           times: {
-            start: "10:30 PDT",
-            end: "11:00 PDT",
+            start: "13:30 EST",
           },
         },
         {
-          avatar: "",
-          speaker: "Mark Miller / CodeRushed",
+          avatar: "./img/speakers/MarkMiller.jpg",
+          speaker: "Mark Miller",
           title: "The Science of Great UI",
           times: {
-            start: "11:00 PDT",
-            end: "11:30 PDT",
+            start: "14:00 EST",
           },
         },
         {
@@ -114,8 +111,16 @@ class Schedules extends Component {
           speaker: "Bryan Robinson",
           title: "Join the CSS Future with CSS Grid",
           times: {
-            start: "11:30 PDT",
-            end: "12:30  PDT",
+            start: "14:30 EST",
+          },
+        },
+        {
+          avatar: "",
+          speaker: "Ryan Overton",
+          title:
+            "PRE - RECORDED 5 minute - Deploying a Gatsby Site to Github Pages",
+          times: {
+            start: "15:10 EST",
           },
         },
         {
@@ -124,46 +129,40 @@ class Schedules extends Component {
           title:
             "An Introduction To IoT (Internet of Toilets); Or How I built an IoT Kitty Litter Box Using JavaScript",
           times: {
-            start: "12:30  PDT",
-            end: "13:00  PDT",
+            start: "15:30 EST",
           },
         },
         {
-          avatar: "",
-          speaker: "Raphael Mun / Instafluff",
-          title: "e Design is a Science!",
+          avatar: "./img/speakers/Instafluff-Raphael-Mun.jpg",
+          speaker: "Raphael Mun",
+          title: "Game Design is a Science!",
           times: {
-            start: "13:00  PDT",
-            end: "13:30  PDT",
+            start: "16:00 EST",
           },
         },
         {
           avatar: "",
-          speaker: "Miko Charbonneau / drmikachu",
-          title: "Picking the Right e Engine",
+          speaker: "Miko Charbonneau",
+          title: "Picking the Right game Engine",
           times: {
-            start: "13:30  PDT",
-            end: "14:00  PDT",
+            start: "16:30 EST",
           },
         },
         {
-          avatar: "",
-          speaker: "Dr. Mahmood Hikmet / sadmoody",
-          title:
-            "Everything you need to know to have an argument about Blockchain",
+          avatar: "/img/speakers/ArenDavey.jpg",
+          speaker: "Aren Davey",
+          title: "TBD",
           times: {
-            start: "14:00  PDT",
-            end: "14:30  PDT",
+            start: "17:00 EST",
           },
         },
         {
-          avatar: "",
+          avatar: "./img/speakers/TylerLeonhardt.jpg",
           speaker: "Tyler Leonhardt",
           title:
             "Auto generate code to interact with your REST API using AutoRest",
           times: {
-            start: "14:30  PDT",
-            end: "15:30  PDT",
+            start: "17:30 EST",
           },
         },
       ],
@@ -171,7 +170,7 @@ class Schedules extends Component {
   };
 
   componentWillMount() {
-    this.displayNewUnit("PDT");
+    this.displayNewUnit("EST");
   }
 
   handleUnitChange(e) {
@@ -183,7 +182,7 @@ class Schedules extends Component {
   displayNewUnit = (unit) => {
     let tempArr = [];
     if (unit === this.state.currentUnit) return;
-    if (unit === "PDT" && this.state.currentUnit === "EDT") {
+    if (unit === "PDT" && this.state.currentUnit === "EST") {
       currentTimeZone = -3;
       this.setState({
         currentUnit: unit,
@@ -200,24 +199,24 @@ class Schedules extends Component {
       });
     }
 
-    if (unit === "EDT" && this.state.currentUnit === "PDT") {
+    if (unit === "EST" && this.state.currentUnit === "PDT") {
       currentTimeZone = +3;
       this.setState({
         currentUnit: unit,
       });
-    } else if (unit === "EDT" && this.state.currentUnit === "UTC") {
+    } else if (unit === "EST" && this.state.currentUnit === "UTC") {
       currentTimeZone = -4;
       this.setState({
         currentUnit: unit,
       });
-    } else if (unit === "EDT" && this.state.currentUnit === "AEST") {
+    } else if (unit === "EST" && this.state.currentUnit === "AEST") {
       currentTimeZone = -14;
       this.setState({
         currentUnit: unit,
       });
     }
 
-    if (unit === "UTC" && this.state.currentUnit === "EDT") {
+    if (unit === "UTC" && this.state.currentUnit === "EST") {
       currentTimeZone = +4;
       this.setState({
         currentUnit: unit,
@@ -234,7 +233,7 @@ class Schedules extends Component {
       });
     }
 
-    if (unit === "AEST" && this.state.currentUnit === "EDT") {
+    if (unit === "AEST" && this.state.currentUnit === "EST") {
       currentTimeZone = +14;
       this.setState({
         currentUnit: unit,
@@ -340,9 +339,9 @@ class Schedules extends Component {
             e=""
             id=""
           >
+            <option value="EST">EST</option>
             <option value="PDT">PDT</option>
             <option value="UTC">UTC</option>
-            <option value="EDT">EDT</option>
             <option value="AEST">AEST</option>
           </select>
           <div className="schedules__card-container">
