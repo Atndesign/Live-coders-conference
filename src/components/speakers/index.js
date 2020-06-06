@@ -98,7 +98,7 @@ let speakers = [
     name: "Jeff Blankenburg",
     twitchName: "jeff blankenburg",
     title: "How to Build Your First Alexa Skill",
-    time: "01:00 AM EST",
+    time: "01:00 PM EST",
     socialsLink: {
       twitch: "http://twitch.tv/jeffblankenburg",
       twitter: "http://twitter.com/jeffblankenburg",
