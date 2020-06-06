@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Live-coders-conference/precache-manifest.949e3eb7eebce700408b44258ef459c8.js"
+  "/Live-coders-conference/precache-manifest.f9b005256311dcd5674dd1b44bafeeab.js"
 );
 
 self.addEventListener('message', (event) => {
