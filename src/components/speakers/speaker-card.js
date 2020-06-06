@@ -6,6 +6,12 @@ class SpeakerCard extends Component {
     this.state = {};
   }
   render() {
+    let avatar;
+    if (this.props.current.avatar !== "") {
+      avatar = this.props.current.avatar;
+    } else {
+      avatar = "./img/speakers/placeholder.jpg";
+    }
     return (
       <div
         className="col-lg-3 col-md-4 col-6 speaker__card-col"
@@ -16,7 +22,7 @@ class SpeakerCard extends Component {
           <div
             className="speaker-card__pic"
             style={{
-              backgroundImage: "url(" + this.props.current.avatar + ")",
+              backgroundImage: "url(" + avatar + ")",
             }}
           ></div>
           <p className="speaker-card__name">
