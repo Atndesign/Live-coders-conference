@@ -66,18 +66,9 @@ class Schedules extends Component {
           },
         },
         {
-          avatar: "./img/speakers/Instafluff-Raphael-Mun.jpg",
-          speaker: "Raphael Mun",
-          title:
-            "PRE- RECORDED 5 minute - Cooking for Coders, a Mug Recipe Quickie!",
-          times: {
-            start: "12:10 EST",
-          },
-        },
-        {
-          avatar: "./img/speakers/JasonHarrison.jpg",
-          speaker: "Jason Harrison",
-          title: "Augmented Reality with Unity - A History and a How-To",
+          avatar: "./img/speakers/Aaron.jpg",
+          speaker: "Aaron",
+          title: "DevOps, We’ll do it Live: Movie Trailer Edition",
           times: {
             start: "12:30 EST",
           },
@@ -112,15 +103,6 @@ class Schedules extends Component {
           title: "Join the CSS Future with CSS Grid",
           times: {
             start: "14:30 EST",
-          },
-        },
-        {
-          avatar: "",
-          speaker: "Ryan Overton",
-          title:
-            "PRE - RECORDED 5 minute - Deploying a Gatsby Site to Github Pages",
-          times: {
-            start: "15:10 EST",
           },
         },
         {
