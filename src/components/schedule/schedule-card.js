@@ -14,7 +14,8 @@ class ScheduleCard extends Component {
         <div
           className="schedule-card"
           data-aos="fade-right"
-          data-aos-delay={100 * this.props.index}
+          data-aos-delay={50 * this.props.index}
+          data-aos-offset="-100"
         >
           <div className="schedule-card__avatar">
             <div
