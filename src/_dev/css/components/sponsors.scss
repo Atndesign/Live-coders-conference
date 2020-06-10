@@ -9,6 +9,17 @@
     .sponsors__conf-sponsors {
         text-align: center;
     }
+
+    .sponsors__logo-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .sponsors__logo {
+            margin-bottom: $spacer * 2;
+        }
+
+    }
 }
 
 @include media-breakpoint-tablet {

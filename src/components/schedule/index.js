@@ -131,7 +131,7 @@ class Schedules extends Component {
           },
         },
         {
-          avatar: "/img/speakers/ArenDavey.jpg",
+          avatar: "./img/speakers/ArenDavey.jpg",
           speaker: "Aren Davey",
           title: "TBD",
           times: {
