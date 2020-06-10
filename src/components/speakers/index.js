@@ -3,7 +3,7 @@ import SpeakerCard from "./speaker-card";
 
 let speakers = [
   {
-    avatar: "",
+    avatar: "./img/speakers/JeffFritz.jpg",
     name: "Jeff Fritz",
     twitchName: "CSharpFritz",
     title: "Native Code, WebAssembly, and C# - Build with Blazor",
@@ -55,16 +55,16 @@ let speakers = [
     },
   },
   {
-    avatar: "",
+    avatar: "./img/speakers/Sadukie.jpg",
     name: "Sarah Dutkiewicz",
-    twitchName: "",
+    twitchName: "Sadukie",
     title: "Data Adventures with Azure Notebooks",
     time: "11:00 AM EST",
     socialsLink: {
       twitch: "",
-      twitter: "",
+      twitter: "https://twitter.com/sadukie",
       github: "",
-      linkedin: "",
+      linkedin: "https://linkedin.com/in/sadukie",
     },
   },
   {

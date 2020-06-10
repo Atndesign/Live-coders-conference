@@ -10,6 +10,7 @@ class Sponsors extends Component {
           <div className="row">
             <div className="col-md-6">
               <h2 className="section__title">Team Sponsors</h2>
+                <div className="row">
               <SponsorCard
                 info={{
                   src: "fauna.png",
@@ -19,6 +20,16 @@ class Sponsors extends Component {
                   link: "https://fauna.com/",
                 }}
               />
+               <SponsorCard
+                    info={{
+                      src: "manning.jpg",
+                      alt: "Manning logo",
+                      width: "239",
+                      height: "37",
+                      link: "https://www.manning.com/",
+                    }}
+                  />
+              </div>
             </div>
             <div className="col-md-6">
               <h2 className="section__title">Conference Sponsors</h2>
@@ -51,15 +62,7 @@ class Sponsors extends Component {
                       link: "https://developer.nexmo.com/",
                     }}
                   />
-                  <SponsorCard
-                    info={{
-                      src: "manning.jpg",
-                      alt: "Manning logo",
-                      width: "239",
-                      height: "37",
-                      link: "https://www.manning.com/",
-                    }}
-                  />
+                 
                   <SponsorCard
                     info={{
                       src: "CouchBase.jpg",

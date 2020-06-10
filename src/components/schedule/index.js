@@ -18,7 +18,7 @@ class Schedules extends Component {
           },
         },
         {
-          avatar: "",
+          avatar: "./img/speakers/JeffFritz.jpg",
           speaker: "Jeff Fritz",
           title: "Native Code, WebAssembly, and C# - Build with Blazor",
           times: {
@@ -50,8 +50,8 @@ class Schedules extends Component {
           },
         },
         {
-          avatar: "",
-          speaker: `Sarah "sadukie" Dutkiewicz`,
+          avatar: "./img/speakers/Sadukie.jpg",
+          speaker: `Sarah Dutkiewicz (Sadukie)`,
           title: "Data Adventures with Azure Notebooks",
           times: {
             start: "11:00 EST",
