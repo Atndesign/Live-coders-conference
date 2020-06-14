@@ -157,47 +157,26 @@ class Schedules extends Component {
 
   handleUnitChange(e) {
     e.preventDefault();
-
     this.displayNewUnit(e.target.value);
   }
 
   displayNewUnit = (unit) => {
     let tempArr = [];
-    console.log(this.state);
-    console.log(unit);
     if (unit !== this.state.currentUnit) {
       if (unit === "PDT" && this.state.currentUnit === "EST") {
         currentTimeZone = -3;
-        this.setState({
-          currentUnit: unit,
-        });
       } else if (unit === "PDT" && this.state.currentUnit === "UTC") {
         currentTimeZone = -7;
-        this.setState({
-          currentUnit: unit,
-        });
       } else if (unit === "PDT" && this.state.currentUnit === "AEST") {
         currentTimeZone = -17;
-        this.setState({
-          currentUnit: unit,
-        });
       }
 
       if (unit === "EST" && this.state.currentUnit === "PDT") {
         currentTimeZone = +3;
-        this.setState({
-          currentUnit: unit,
-        });
       } else if (unit === "EST" && this.state.currentUnit === "UTC") {
         currentTimeZone = -4;
-        this.setState({
-          currentUnit: unit,
-        });
       } else if (unit === "EST" && this.state.currentUnit === "AEST") {
         currentTimeZone = -14;
-        this.setState({
-          currentUnit: unit,
-        });
       }
 
       if (unit === "UTC" && this.state.currentUnit === "EST") {
@@ -207,32 +186,20 @@ class Schedules extends Component {
         });
       } else if (unit === "UTC" && this.state.currentUnit === "PDT") {
         currentTimeZone = +7;
-        this.setState({
-          currentUnit: unit,
-        });
       } else if (unit === "UTC" && this.state.currentUnit === "AEST") {
         currentTimeZone = -10;
-        this.setState({
-          currentUnit: unit,
-        });
       }
 
       if (unit === "AEST" && this.state.currentUnit === "EST") {
         currentTimeZone = +14;
-        this.setState({
-          currentUnit: unit,
-        });
       } else if (unit === "AEST" && this.state.currentUnit === "PDT") {
         currentTimeZone = +17;
-        this.setState({
-          currentUnit: unit,
-        });
       } else if (unit === "AEST" && this.state.currentUnit === "UTC") {
         currentTimeZone = +10;
-        this.setState({
-          currentUnit: unit,
-        });
       }
+      this.setState({
+        currentUnit: unit,
+      });
     }
     //--------------------------//
 
@@ -281,8 +248,6 @@ class Schedules extends Component {
       dayTime = "AM";
     }
     let minutes = splitted[1].slice(0, 3);
-
-    console.log("Hello world !");
     if (hour > 12) {
       return `${this.checkIfZero(hour - 12)}:${minutes}${dayTime} ${unit}`;
     } else {
