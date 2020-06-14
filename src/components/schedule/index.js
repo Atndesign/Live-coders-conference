@@ -26,8 +26,8 @@ class Schedules extends Component {
           },
         },
         {
-          avatar: "",
-          speaker: "Jemina Abu",
+          avatar: "./img/speakers/JemimaAbu.jpg",
+          speaker: "Jemima Abu",
           title: "Manipulating Webpages using DevTools",
           times: {
             start: "09:30 EST",
@@ -58,7 +58,7 @@ class Schedules extends Component {
           },
         },
         {
-          avatar: "",
+          avatar: "./img/speakers/JamesMontemagno.jpg",
           speaker: "James Montemagno",
           title: "Building A Friend System with No Servers & No Usernames",
           times: {
@@ -98,7 +98,7 @@ class Schedules extends Component {
           },
         },
         {
-          avatar: "",
+          avatar: "./img/speakers/BryanRobinson.jpg",
           speaker: "Bryan Robinson",
           title: "Join the CSS Future with CSS Grid",
           times: {
@@ -123,8 +123,8 @@ class Schedules extends Component {
           },
         },
         {
-          avatar: "",
-          speaker: "Miko Charbonneau",
+          avatar: "./img/speakers/MikoCharbonneau.jpg",
+          speaker: "Dr. Miko Charbonneau",
           title: "Picking the Right game Engine",
           times: {
             start: "16:30 EST",
