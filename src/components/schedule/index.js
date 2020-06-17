@@ -42,9 +42,9 @@ class Schedules extends Component {
           },
         },
         {
-          avatar: "",
+          avatar: "./img/speakers/KassandraWren.jpg",
           speaker: "Nodebotanist",
-          title: "",
+          title: "Creating User Engagement with (ro)bots",
           times: {
             start: "10:30 EST",
           },
@@ -82,7 +82,7 @@ class Schedules extends Component {
           },
         },
         {
-          avatar: "",
+          avatar: "./img/speakers/ninaz.jpg",
           speaker: "Nina Zakharenko",
           title: "Light Up Your Life, With Python and LEDs!",
           times: {
