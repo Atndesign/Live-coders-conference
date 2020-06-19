@@ -18,7 +18,7 @@ class Schedules extends Component {
           },
         },
         {
-          avatar: "",
+          avatar: "./img/speakers/JeffFritz.jpg",
           speaker: "Jeff Fritz",
           title: "Native Code, WebAssembly, and C# - Build with Blazor",
           times: {
@@ -26,8 +26,8 @@ class Schedules extends Component {
           },
         },
         {
-          avatar: "",
-          speaker: "Jemina Abu",
+          avatar: "./img/speakers/JemimaAbu.jpg",
+          speaker: "Jemima Abu",
           title: "Manipulating Webpages using DevTools",
           times: {
             start: "09:30 EST",
@@ -50,15 +50,15 @@ class Schedules extends Component {
           },
         },
         {
-          avatar: "",
-          speaker: `Sarah "sadukie" Dutkiewicz`,
+          avatar: "./img/speakers/Sadukie.jpg",
+          speaker: `Sarah Dutkiewicz (Sadukie)`,
           title: "Data Adventures with Azure Notebooks",
           times: {
             start: "11:00 EST",
           },
         },
         {
-          avatar: "",
+          avatar: "./img/speakers/JamesMontemagno.jpg",
           speaker: "James Montemagno",
           title: "Building A Friend System with No Servers & No Usernames",
           times: {
@@ -66,18 +66,9 @@ class Schedules extends Component {
           },
         },
         {
-          avatar: "./img/speakers/Instafluff-Raphael-Mun.jpg",
-          speaker: "Raphael Mun",
-          title:
-            "PRE- RECORDED 5 minute - Cooking for Coders, a Mug Recipe Quickie!",
-          times: {
-            start: "12:10 EST",
-          },
-        },
-        {
-          avatar: "./img/speakers/JasonHarrison.jpg",
-          speaker: "Jason Harrison",
-          title: "Augmented Reality with Unity - A History and a How-To",
+          avatar: "./img/speakers/Aaron.jpg",
+          speaker: "Aaron",
+          title: "DevOps, We’ll do it Live: Movie Trailer Edition",
           times: {
             start: "12:30 EST",
           },
@@ -107,20 +98,11 @@ class Schedules extends Component {
           },
         },
         {
-          avatar: "",
+          avatar: "./img/speakers/BryanRobinson.jpg",
           speaker: "Bryan Robinson",
           title: "Join the CSS Future with CSS Grid",
           times: {
             start: "14:30 EST",
-          },
-        },
-        {
-          avatar: "",
-          speaker: "Ryan Overton",
-          title:
-            "PRE - RECORDED 5 minute - Deploying a Gatsby Site to Github Pages",
-          times: {
-            start: "15:10 EST",
           },
         },
         {
@@ -141,15 +123,15 @@ class Schedules extends Component {
           },
         },
         {
-          avatar: "",
-          speaker: "Miko Charbonneau",
+          avatar: "./img/speakers/MikoCharbonneau.jpg",
+          speaker: "Dr. Miko Charbonneau",
           title: "Picking the Right game Engine",
           times: {
             start: "16:30 EST",
           },
         },
         {
-          avatar: "/img/speakers/ArenDavey.jpg",
+          avatar: "./img/speakers/ArenDavey.jpg",
           speaker: "Aren Davey",
           title: "TBD",
           times: {
