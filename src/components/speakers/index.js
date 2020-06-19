@@ -8,6 +8,7 @@ let speakers = [
     twitchName: "CSharpFritz",
     title: "Native Code, WebAssembly, and C# - Build with Blazor",
     time: "09:00 AM EST",
+    pronoun: "He",
     socialsLink: {
       twitch: "",
       twitter: "",
@@ -21,6 +22,7 @@ let speakers = [
     twitchName: "",
     title: "Manipulating Webpages using DevTools",
     time: "09:30 AM EST",
+    pronoun: "She",    
     socialsLink: {
       twitch: "",
       twitter: "https://www.twitter.com/jemimaabu",
@@ -34,6 +36,7 @@ let speakers = [
     twitchName: "codingafterwork",
     title: "Blazor Web Bluetooth",
     time: "10:00 AM EST",
+    pronoun: "He",
     socialsLink: {
       twitch: "https://www.twitch.tv/codingafterwork",
       twitter: "https://twitter.com/EngstromJimmy ",
@@ -47,6 +50,7 @@ let speakers = [
     twitchName: "",
     title: "",
     time: "10:30 AM EST",
+    pronoun: "They/Them",
     socialsLink: {
       twitch: "",
       twitter: "",
@@ -60,6 +64,7 @@ let speakers = [
     twitchName: "Sadukie",
     title: "Data Adventures with Azure Notebooks",
     time: "11:00 AM EST",
+    pronoun: "She",
     socialsLink: {
       twitch: "",
       twitter: "https://twitter.com/sadukie",
@@ -73,6 +78,7 @@ let speakers = [
     twitchName: "",
     title: "Building a Friend System with No Servers & No Usernames",
     time: "11:30 AM EST",
+    pronoun: "He",
     socialsLink: {
       twitch: "",
       twitter: "",
@@ -86,6 +92,7 @@ let speakers = [
     twitchName: "Mastermnd",
     title: "DevOps, We’ll do it Live: Movie Trailer Edition",
     time: "12:30 AM EST",
+    pronoun: "He",
     socialsLink: {
       twitch: "https://www.twitch.tv/mastermndio",
       twitter: "https://twitter.com/mastermndio",
@@ -99,6 +106,7 @@ let speakers = [
     twitchName: "jeff blankenburg",
     title: "How to Build Your First Alexa Skill",
     time: "01:00 PM EST",
+    pronoun: "He",
     socialsLink: {
       twitch: "http://twitch.tv/jeffblankenburg",
       twitter: "http://twitter.com/jeffblankenburg",
@@ -112,6 +120,7 @@ let speakers = [
     twitchName: "Nnjaio",
     title: "Light Up Your Life, With Python and LEDs!",
     time: "01:30 PM EST",
+    pronoun: "She",
     socialsLink: {
       twitch: "",
       twitter: "",
@@ -125,6 +134,7 @@ let speakers = [
     twitchName: "Coderushed",
     title: "The Science of Great UI",
     time: "02:00 PM EST",
+    pronoun: "He",
     socialsLink: {
       twitch: "https://www.twitch.tv/coderushed",
       twitter: "https://twitter.com/millermark",
@@ -138,6 +148,7 @@ let speakers = [
     twitchName: "",
     title: "Join the CSS Future with CSS Grid",
     time: "02:30 PM EST",
+    pronoun: "He",
     socialsLink: {
       twitch: "https://twitch.tv/bryanlrobinson",
       twitter: "https://twitter.com/brob",
@@ -152,6 +163,7 @@ let speakers = [
     title:
       "An Introduction To IoT (Internet of Toilets); Or How I built an IoT Kitty Litter Box Using JavaScript",
     time: "03:30 PM EST",
+    pronoun: "He",
     socialsLink: {
       twitch: "",
       twitter: "https://twitter.com/JoeKarlsson1",
@@ -165,6 +177,7 @@ let speakers = [
     twitchName: "Instafluff",
     title: "Game Design is a Science!",
     time: "04:00 PM EST",
+    pronoun: "He",
     socialsLink: {
       twitch: "https://www.twitch.tv/Instafluff",
       twitter: "https://twitter.com/InstafluffTV",
@@ -178,6 +191,7 @@ let speakers = [
     twitchName: "DrMikachu",
     title: "Picking the Right Game Engine",
     time: "04:30 PM EST",
+    pronoun: "She",
     socialsLink: {
       twitch: "https://www.twitch.tv/drmikachu",
       twitter: "https://twitter.com/DrMikachu/",
@@ -191,6 +205,7 @@ let speakers = [
     twitchName: "CozyCoding",
     title: "To Be Determined",
     time: "05:00 PM EST",
+    pronoun: "She",
     socialsLink: {
       twitch: "https://www.twitch.tv/cozycoding",
       twitter: "https://twitter.com/aah_dee_",
@@ -204,6 +219,7 @@ let speakers = [
     twitchName: "",
     title: "Auto generate code to interact with your REST API using AutoRes",
     time: "05:30 PM EST",
+    pronoun: "He",
     socialsLink: {
       twitch: "https://twitch.tv/TylerLeonhardt",
       twitter: "https://twitter.com/TylerLeonhardt",

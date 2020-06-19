@@ -30,6 +30,7 @@ class SpeakerCard extends Component {
               (this.props.current.twitchName &&
                 ` (${this.props.current.twitchName})`)}
           </p>
+          <p>{this.props.current.pronoun}</p>
           <p className="speaker-card__title">{this.props.current.title}</p>
           <p className="speaker-card__time">{this.props.current.time}</p>
           <div className="speaker-card__socials">
