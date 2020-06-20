@@ -248,20 +248,9 @@ class Schedules extends Component {
       dayTime = "AM";
     }
     let minutes = splitted[1].slice(0, 3);
-    if (hour > 12) {
-      return `${this.checkIfZero(hour - 12)}:${minutes}${dayTime} ${unit}`;
-    } else {
-      return `${this.checkIfZero(hour)}:${minutes}${dayTime} ${unit}`;
-    }
+    return `${hour}:${minutes}${dayTime} ${unit}`;
   };
 
-  checkIfZero(hour) {
-    if (hour < 10) {
-      return `0${hour}`;
-    } else {
-      return hour;
-    }
-  }
   render() {
     return (
       <section id="schedules" className="schedules">

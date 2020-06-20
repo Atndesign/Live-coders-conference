@@ -2,6 +2,13 @@ import React, { Component } from "react";
 
 class ScheduleCard extends Component {
   state = {};
+  checkIfZero(hour) {
+    if (hour < 10) {
+      return `0${hour}`;
+    } else {
+      return hour;
+    }
+  }
   render() {
     let avatar;
     if (this.props.infos.avatar !== "") {
@@ -9,6 +16,13 @@ class ScheduleCard extends Component {
     } else {
       avatar = "./img/speakers/placeholder.jpg";
     }
+    const time = this.props.infos.times.start;
+    let newTime = time.split(":")[0];
+    let rest = time.split(":")[1];
+    if (newTime > 12) {
+      newTime -= 12;
+    }
+
     return (
       <div className="col-lg-4 col-md-6 schedule-card__container-col">
         <div
@@ -38,7 +52,7 @@ class ScheduleCard extends Component {
                   alt="watch"
                   className="schedule-time__watch"
                 />
-                {this.props.infos.times.start}
+                {`${this.checkIfZero(newTime)}:${rest}`}
               </span>
             </div>
           </div>
