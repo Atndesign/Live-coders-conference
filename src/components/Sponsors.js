@@ -39,7 +39,7 @@ class Sponsors extends Component {
                     info={{
                       src: "azure.jpg",
                       alt: "Azure logo",
-                      width: "229",
+                      width: "239",
                       height: "36",
                       link: "https://azure.microsoft.com/",
                     }}

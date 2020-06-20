@@ -43,7 +43,7 @@ let speakers = [
   },
   {
     avatar: "./img/speakers/KassandraWren.jpg",
-    name: "Kassandra Rosner Wren",
+    name: "Kassian Rosner Wren",
     twitchName: "Nodebotanist",
     title: "Creating User Engagement with (ro)bots",
     time: "10:30 AM EST",
@@ -82,7 +82,7 @@ let speakers = [
   },
   {
     avatar: "./img/speakers/Aaron.jpg",
-    name: "Aaron",
+    name: "Aaron Brooks",
     twitchName: "Mastermnd",
     title: "DevOps, We’ll do it Live: Movie Trailer Edition",
     time: "12:30 AM EST",
@@ -189,7 +189,7 @@ let speakers = [
     avatar: "./img/speakers/ArenDavey.jpg",
     name: "Aren Davey",
     twitchName: "CozyCoding",
-    title: "To Be Determined",
+    title: "An Indoctrination to the Cult of Geometry via JavaScript",
     time: "05:00 PM EST",
     socialsLink: {
       twitch: "https://www.twitch.tv/cozycoding",

@@ -43,7 +43,7 @@ class Schedules extends Component {
         },
         {
           avatar: "./img/speakers/KassandraWren.jpg",
-          speaker: "Nodebotanist",
+          speaker: "Kassian Rosner Wren",
           title: "Creating User Engagement with (ro)bots",
           times: {
             start: "10:30 EST",
@@ -67,7 +67,7 @@ class Schedules extends Component {
         },
         {
           avatar: "./img/speakers/Aaron.jpg",
-          speaker: "Aaron",
+          speaker: "Aaron Brooks",
           title: "DevOps, We’ll do it Live: Movie Trailer Edition",
           times: {
             start: "12:30 EST",
@@ -133,7 +133,7 @@ class Schedules extends Component {
         {
           avatar: "./img/speakers/ArenDavey.jpg",
           speaker: "Aren Davey",
-          title: "TBD",
+          title: "An Indoctrination to the Cult of Geometry via JavaScript",
           times: {
             start: "17:00 EST",
           },
