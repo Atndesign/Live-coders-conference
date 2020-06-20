@@ -275,7 +275,7 @@ class Schedules extends Component {
           </a>
           <p className="schedules__conf-title">Conference Part A</p>
           <p className="schedules__conf-title --bold">
-            Thursday April 9th 2020
+            Saturday June 20th 2020
           </p>
           <select
             className="schedule__unit-conversion"
